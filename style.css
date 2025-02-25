@@ -365,6 +365,7 @@ a {
 }
 .main_three_blog-point {
     position: relative;
+    text-align: center;
     width: 900px;
     height: 280px;
     margin: 41px 0 0 350px;
@@ -472,7 +473,7 @@ a {
 
 .main_four-arrow {
     position: absolute;
-    margin: 210px 0 0 350px;
+    margin: 210px 0 0 255px;
     z-index: 50;
 }
 
@@ -496,24 +497,173 @@ a {
     border-radius: 50px;
     color: #F3F3F3;
     font-size: 24px;
-    margin-left: 750px;
+    margin-left: 990px;
 }
 
 .main_four_dots-navigation {
-    color: #656565;
+    color: #D9D9D9;
     position: relative;
     display: flex;
-    gap: 30px;
+    gap: 6px;
     font-size: 40px;
     margin-top: 30px;
     text-align: center;
     justify-content: center;
     cursor: pointer;
-    
 }
 .main_four_dots {
     transition: .2s;
 }
 .main_four_dots:hover {
     color: #FF6712;
+}
+.main_five {
+    height: 450px;
+}
+.main_five_heading {
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    color: black;
+    position: relative;
+    width: 620px;
+    border: 1px solid #FF9900;
+    padding: 17px 45px;
+    box-sizing: border-box;
+    font-size: 52px;
+    margin: 100px 0 80px 350px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.button_test {
+    position: relative;
+    padding: 22px 49px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    border-radius: 183px;
+    background: linear-gradient(95.37deg, #FF6712 46.88%, #FF9900 100%);
+    border: none;
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    font-size: 22px;
+    color: white;
+    z-index: 2;
+}
+.main_five_fireplace {
+    position: absolute;
+    margin: -100px 0 0 750px;
+    width: 500px;
+    height: auto;
+    z-index: 1;
+}
+
+.main_sex{
+    position: relative;
+    background-color: black;
+    z-index: -1;
+    width: 100em;
+    height: 800px;
+}
+
+.main_sex_blog {
+    position: relative;
+    text-align: center;
+    width: 900px;
+    height: 300px;
+    margin-left: 350px;
+    display: grid;
+    grid-gap: 21px;
+    justify-content: space-between;
+    grid: repeat(3, 150px) / repeat(3, 300px);
+}
+.main_sex_heading {
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    width: 400px;
+    border: 1px solid #FF9900;
+    padding: 17px;
+    box-sizing: border-box;
+    font-size: 52px;
+    margin-left: 350px;
+    text-transform: uppercase;
+}
+.main_sex_title {
+    margin: 50px 0 50px 395px;
+}
+.sex-blog-point-silver {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(275.59deg, #D0D0D0 19.29%, #FEFEFE 83.47%);
+    border-radius: 10px;
+    display: flex;
+}
+
+.sex-blog-point-orange {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(129.09deg, #FFE6BF 20.65%, #FFB951 79.9%);
+    border-radius: 10px;
+    display: flex;
+}
+
+.sex-blog-point {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 67%;
+    
+}
+.sex-blog-number {
+    position: relative;
+    font-family: 'Akzidenz-Grotesk Pro';
+    color: #7C7C7C;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: left;
+}
+.sex-blog-title {
+    position: relative;
+    color: #151515;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-top: 20px;
+    text-align: left;
+}
+.sex-blog-point-img1 {
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+.sex-blog-point-img2 {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 5%;
+}
+.sex-blog-point-img3 {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    top: 5%;
+}
+.sex-blog-point-img4 {
+    position: absolute;
+    right: 0;
+    width: 35%;
+    top: 15%;
+}
+.sex-blog-point-img5 {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    top: 5%;
+}
+
+.sex-blog-point-img6 {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    top: 10%;
 }
