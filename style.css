@@ -21,6 +21,36 @@ body {
     height: auto;
     margin: auto;
 }
+
+.square_line-1, .square_line-2{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.square_line-1 span {
+    width: 29px;
+    height: 29px;
+    border-top: 4px solid orange;
+}
+.square_line-1 span:last-child {
+    border-right: 4px solid orange;
+}
+.square_line-1 span:first-child {
+    border-left: 4px solid orange;
+}
+
+.square_line-2 span {
+    width: 29px;
+    height: 29px;
+    border-bottom: 4px solid orange;
+}
+.square_line-2 span:last-child {
+    border-right: 4px solid orange;
+}
+.square_line-2 span:first-child {
+    border-left: 4px solid orange;
+}
+
 .background-photo {
     position: absolute;
     background: center no-repeat url('/img/header/фон.png');
@@ -315,40 +345,40 @@ a {
     margin: auto;
     text-transform: uppercase;
 }
-.blog-point-h3 {
+.block-point-h3 {
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 7px;
 }
-.blog-point-p {
+.block-point-p {
     font-size: 12px;
     line-height: 12px;
     float:left;
 }
-.blog-point-img1 {
+.block-point-img1 {
     position: relative;
     width: 230px;
     height: auto;
     justify-content: center;
 }
-.blog-point-img2 {
+.block-point-img2 {
     position: relative;
     width: 130px;
     height: auto;
     margin: -45px 0 0 136px;
     border-radius: 0 0 27px 0;
 }
-.blog-point-img3 {
+.block-point-img3 {
     width: 266px;
     margin-bottom: 5px;
 }
-.blog-point-img4 {
+.block-point-img4 {
     position: relative;
     width: 250px;
     height: 120px;
     margin: -20px 20px 0 0;
 }
-.blog-point-img5 {
+.block-point-img5 {
     position: relative;
     width: 440px;
     height: 150px;
@@ -356,14 +386,14 @@ a {
     margin: -64px 0 0 -20px;
     z-index: 1;
 }
-.blog-point-img6 {
+.block-point-img6 {
     position: absolute;
     width: auto;
     height: 170px;
     border-radius: 0 0 20px 0;
     margin: -10px 0 0 162px;
 }
-.main_three_blog-point {
+.main_three_block-point {
     position: relative;
     text-align: center;
     width: 900px;
@@ -375,7 +405,7 @@ a {
     grid: repeat(4, 120px) / repeat(3, 286px);
 }
 
-.blog-point {
+.block-point {
     padding: 20px 20px;
 }
 
@@ -405,7 +435,7 @@ a {
     color: #151515;
     display: flex;
 }
-.main_three_blog-point_down {
+.main_three_block-point_down {
     position: relative;
     display: flex;
     gap: 20px;
@@ -422,7 +452,7 @@ a {
     float: left;
     position: relative;
 }
-.blog-point5_title {
+.block-point5_title {
     width: 230px;
 }
 
@@ -435,7 +465,7 @@ a {
     box-sizing: border-box;
     float: left;
 }
-.blog-point6_title {
+.block-point6_title {
     width: 220px;
     position: absolute;
 }
@@ -556,15 +586,15 @@ a {
     z-index: 1;
 }
 
-.main_sex{
+.main_six{
     position: relative;
     background-color: black;
     z-index: -1;
     width: 100em;
-    height: 800px;
+    height: 950px;
 }
 
-.main_sex_blog {
+.main_six_block {
     position: relative;
     text-align: center;
     width: 900px;
@@ -575,7 +605,7 @@ a {
     justify-content: space-between;
     grid: repeat(3, 150px) / repeat(3, 300px);
 }
-.main_sex_heading {
+.main_six_heading {
     font-family: 'Akzidenz-Grotesk Pro Extra'; 
     font-weight: 700;
     text-align: center;
@@ -588,10 +618,10 @@ a {
     margin-left: 350px;
     text-transform: uppercase;
 }
-.main_sex_title {
+.main_six_title {
     margin: 50px 0 50px 395px;
 }
-.sex-blog-point-silver {
+.six-block-point-silver {
     position: relative;
     width: 300px;
     height: 150px;
@@ -600,7 +630,7 @@ a {
     display: flex;
 }
 
-.sex-blog-point-orange {
+.six-block-point-orange {
     position: relative;
     width: 300px;
     height: 150px;
@@ -609,13 +639,13 @@ a {
     display: flex;
 }
 
-.sex-blog-point {
+.six-block-point {
     padding: 10px;
     box-sizing: border-box;
     width: 67%;
     
 }
-.sex-blog-number {
+.six-block-number {
     position: relative;
     font-family: 'Akzidenz-Grotesk Pro';
     color: #7C7C7C;
@@ -623,7 +653,7 @@ a {
     font-weight: 100;
     text-align: left;
 }
-.sex-blog-title {
+.six-block-title {
     position: relative;
     color: #151515;
     font-size: 14px;
@@ -631,39 +661,135 @@ a {
     margin-top: 20px;
     text-align: left;
 }
-.sex-blog-point-img1 {
+.six-block-point-img1 {
     position: absolute;
     right: 0;
     width: 50%;
 }
-.sex-blog-point-img2 {
+.six-block-point-img2 {
     position: absolute;
     right: 0;
     width: 50%;
     top: 5%;
 }
-.sex-blog-point-img3 {
+.six-block-point-img3 {
     position: absolute;
     right: 0;
     width: 80%;
     top: 5%;
 }
-.sex-blog-point-img4 {
+.six-block-point-img4 {
     position: absolute;
     right: 0;
     width: 35%;
     top: 15%;
 }
-.sex-blog-point-img5 {
+.six-block-point-img5 {
     position: absolute;
     right: 0;
     width: 40%;
     top: 5%;
 }
 
-.sex-blog-point-img6 {
+.six-block-point-img6 {
     position: absolute;
     right: 0;
     width: 40%;
     top: 10%;
+}
+
+.main_seven {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    height: 1500px;
+}
+
+video {
+    width: 70%;
+    height: auto;
+}
+
+.heading-seven {
+    width: 750px;
+    margin: 100px 0 0 250px;
+}
+
+.main_seven_heading {
+    text-transform: uppercase;
+    color: #151515;
+    text-align: left;
+    padding: 0 36px;
+    width: 750px;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.main_seven-feedback {
+    position: relative;
+    display: flex;
+}
+
+.feedback-block {
+    width: 700px;
+    height: 420px;
+    border-radius: 20px;
+    padding: 85px 80px;
+    box-sizing: border-box;
+    background-color: #151515;
+    text-align: left;
+    margin: 80px 0 0 250px;
+}
+
+.feedback-form {
+    width: 300px;
+    position: relative;
+}
+.feedback-form-input::placeholder {
+    color: #212529;
+    font-size: 14px;
+  }
+ 
+
+.feedback-form-input {
+    all: unset;
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: #151515;
+}
+
+.feedback-form-submit {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 20px;
+    background: linear-gradient(95.37deg, #FF6712 46.88%, #FF9900 100%);
+    border: none;
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.feedback-block-title {
+    color: #ACACAC;
+    font-size: 9px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback-magazine {
+    position: absolute;
+    margin: -40px 0 0 600px;
+    width: 900px;
+    height: auto;
 }
