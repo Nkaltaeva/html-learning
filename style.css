@@ -234,6 +234,7 @@ a {
     width: 230px;
     height: auto;
     margin-top: 30px;
+    position: relative;
 }
 .main_one_title {
     z-index: 1;
@@ -370,7 +371,7 @@ a {
 }
 .fireplace-main_two {
     position: absolute;
-    width: 60%;
+    width: 100%;
     background-image:  url(/img/main/two/image\ 1710.png);
     background-repeat: no-repeat;
     background-position: bottom 100px right -50% !important;
@@ -454,48 +455,77 @@ a {
     font-size: 14px;
     margin-bottom: 7px;
 }
+
 .block-point-p {
     font-size: 12px;
     line-height: 12px;
     float:left;
 }
+
 .block-point-img1 {
     position: relative;
-    width: 230px;
-    height: auto;
-    justify-content: center;
+    width: 255px;
+    height: 170px;
+    top: 30px;
+    background-image: url(/img/main/three_four/Group\ 1.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    
 }
 .block-point-img2 {
     position: relative;
-    width: 130px;
-    height: auto;
-    margin: -45px 0 0 136px;
-    border-radius: 0 0 27px 0;
+    width: 120px;
+    height: 60px;
+    top: 15px;
+    left: 146px;
+    border-radius: 0 0 20px 0;
+    background-image: url(/img/main/three_four/image-removebg-preview\ \(5\)\ 1.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .block-point-img3 {
-    width: 266px;
-    margin-bottom: 5px;
+    position: relative;
+    width: 220px;
+    height: 130px;
+    left: 46px;
+    background-image: url(/img/main/three_four/Mask\ group.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .block-point-img4 {
     position: relative;
-    width: 250px;
+    width: 400px;
     height: 120px;
-    margin: -20px 20px 0 0;
+    top: -20px;
+    background-image: url(/img/main/three_four/image\ 1716.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .block-point-img5 {
     position: relative;
-    width: 440px;
-    height: 150px;
-    border-radius: 0 0 20px 20px;
-    margin: -64px 0 0 -20px;
-    z-index: 1;
+    width: 419px;
+    height: 136px;
+    border-radius: 0 0 20px 0;
+    background-image: url(/img/main/three_four/de565b8246f5e0519a99070cd92930c5\ 2.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .block-point-img6 {
-    position: absolute;
-    width: auto;
-    height: 170px;
+    position: relative;
+    width: 300px;
+    height: 150px;
+    top: 10px;
+    left: 120px;
     border-radius: 0 0 20px 0;
-    margin: -10px 0 0 162px;
+    background-image: url(/img/main/three_four/1629902444_28-kartinkin-com-p-semya-na-shashlikakh-yeda-krasivo-foto-31-removebg-preview\ 1.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .main_three_block-point {
     position: relative;
@@ -805,45 +835,67 @@ a {
     color: #151515;
     font-size: 14px;
     line-height: 1.2em;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: left;
     
 }
 .six-block-point-img1 {
-    position: absolute;
-    right: 0;
-    width: 50%;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-image: url(/img/main/five/Group\ 368.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .six-block-point-img2 {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    top: 5%;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-image: url(/img/main/five/image-removebg-preview\ \(13\)\ 1.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .six-block-point-img3 {
-    position: absolute;
-    right: 0;
-    width: 80%;
-    top: 5%;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-image: url(/img/main/five//Mask\ group.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .six-block-point-img4 {
-    position: absolute;
-    right: 0;
-    width: 35%;
-    top: 15%;
+    position: relative;
+    height: 125px;
+    width: 130px;
+    top: 20px;
+    background-image: url(/img/main/five/image\ 1725.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .six-block-point-img5 {
-    position: absolute;
-    right: 0;
-    width: 40%;
-    top: 5%;
+    position: relative;
+    height: 130px;
+    width: 140px;
+    top: 20px;
+    background-image: url(/img/main/five/image\ 1726.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .six-block-point-img6 {
-    position: absolute;
-    right: 0;
-    width: 40%;
-    top: 10%;
+    position: relative;
+    height: 125px;
+    width: 130px;
+    top: 20px;
+    background-image: url(/img/main/five/image\ 1727.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .cloud_up-seven {
     position: absolute;
