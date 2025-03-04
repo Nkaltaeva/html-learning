@@ -230,11 +230,45 @@ a {
     height: 360px;
 }
 
-.main_one_img {
+.main_one_img1 {
     width: 230px;
-    height: auto;
+    height: 230px;
     margin-top: 30px;
     position: relative;
+    border-radius: 0 0 20px 0;
+    background-image: url(/img/main/one/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_one_img2 {
+    width: 230px;
+    height: 230px;
+    margin-top: 30px;
+    position: relative;
+    border-radius: 0 0 20px 0;
+    background-image: url(/img/main/one/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_one_img3 {
+    width: 230px;
+    height: 230px;
+    margin-top: 30px;
+    position: relative;
+    border-radius: 0 0 20px 0;
+    background-image: url(/img/main/one/3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_one_img4 {
+    width: 230px;
+    height: 230px;
+    margin-top: 30px;
+    position: relative;
+    border-radius: 0 0 20px 0;
+    background-image: url(/img/main/one/4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main_one_title {
     z-index: 1;
@@ -926,11 +960,12 @@ a {
 }
 .smoke-center-seven {
     position: absolute;
-    width: 100%;
+    width: 300px;
     background-image: url(/img/main/seven/image\ 1710.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right 90% !important;
-    height: 700px;
+    right: 20px;
+    height: 900px;
      z-index: 1;
 }
 .smoke-down-seven {
@@ -978,10 +1013,6 @@ video {
     font-size: 52px;
 }
 
-.main_seven-feedback {
-    position: relative;
-    display: flex;
-}
 
 .feedback-block {
     width: 700px;
@@ -1040,11 +1071,15 @@ video {
 }
 
 .feedback-magazine {
-    position: absolute;
-    margin: -40px 0 0 600px;
+    position: absolute;solute;
     width: 900px;
-    height: auto;
+    height: 700px;
+    background-image: url(/img/main/seven/каталог.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 3;
+    left: 550px;
+    bottom: 20px;
 }
 .main_eight {
     margin-top: 200px;
@@ -1053,8 +1088,7 @@ video {
 .heading-eight {
     position: relative;
     width: 700px;
-    margin: -120px 0 -150px 250px;
-    display: flex;
+    margin: -120px 0 0 250px;
 }
 
 .main_eight_heading {
@@ -1073,10 +1107,14 @@ video {
 }
 
 .giftbox {
-    position: relative;
-    margin: -50px 0 0 -100px;
+    position: absolute;
     width: 400px;
-    height: auto;
+    height: 400px;
+    background-image: url(/img/main/eight/giftbox\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 600px;
+    top: -50px;
 }
 
 .main_eight-flowers {
