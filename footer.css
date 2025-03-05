@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Akzidenz-Grotesk Pro', Arial, Helvetica, sans-serif;
+}
+
+footer {
+    display: flex;
+    margin: 50px 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.footer-logo-txt {
+    position: relative;
+    opacity: .2;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.footer-nav {
+    position: relative;
+    gap: 50px;
+    line-height: 2;
+    display: flex;
+}
+.footer-nav-menu {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    transition: .6s;
+}
+.footer-hover:hover {
+    color: #FF9900;
+}
+.footer-contact {
+    position: relative;
+    text-align: center;
+    line-height: 3;
+}
+.footer-contact-web {
+    position: relative;
+    margin-right: 10px;
+}
+.footer-contact-phone {
+position: relative;
+}
+
+.footer-schedule {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.footer-phone-title {
+    position: relative;
+    text-align: right;
+}
+.footer-title {
+    position: relative;
+    opacity: .4;
+    font-size: 14px;
+}
+.footer-title2 {
+    position: relative;
+    opacity: .4;
+    font-size: 10px;
+}
+.footer-phone-img {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.footer-phone-take {
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    text-align: right;
+    cursor: pointer;
+    transition: .6s;
+}
+.footer-phone-take:hover {
+    color: #FF9900;
+}
+
