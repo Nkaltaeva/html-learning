@@ -56,7 +56,7 @@ a {
     width: 100%;
     background-image:  url(./img/header/image\ 1703\ \(1\).png);
     background-repeat: no-repeat;
-    background-position: bottom 256px right -50% !important;
+    background-position: bottom 256px right -30% !important;
     height: 750px;
 }
 
@@ -98,6 +98,7 @@ a {
     justify-content: space-between;
     gap: 12px;
     margin-top: 10px;
+    text-shadow: #000000 1px 0 7px;
 }
 .nav_network_header {
     position: relative;
@@ -116,6 +117,9 @@ a {
     font-family: 'Akzidenz-Grotesk Pro Extra';
     width: 140px;
     height: 33px;
+}
+.nav_phone_header:hover {
+    color: #FF9900;
 }
 .square_line-1, .square_line-2{
     display: flex;
@@ -197,11 +201,11 @@ a {
     color: white;
     z-index: 2;
     cursor: pointer;
-    transition: .6s;
+
 }
 .button_price:hover {
-    background: #212529;
-    color: #FF9900;
+    background: #FF6712;
+    color: #151515;
 }
 
 .cloud_up {
