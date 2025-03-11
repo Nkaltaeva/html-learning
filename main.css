@@ -72,8 +72,18 @@
 }
 
 .main_nav_fix {
-    position: absolute;
-    right: 0;
+    position: sticky;
+    
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #FFB951;
+}
+
+.main_nav_fix-button {
+   position: absolute;
+   right: 0;
+   top: 60px;
 }
 
 .main_nav_grup {
@@ -452,19 +462,24 @@
     text-transform: uppercase;
     font-size: 52px;
 }
-
 .main_four_carousel {
     position: relative;
     display: flex;
-    gap: 20px;
+    z-index: 6;
+    align-items: center;
     margin-top: 80px;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    gap: 20px;
     z-index: 6;
     overflow: hidden;
     justify-content: center;
-    
 }
-.main_four_carousel::before {
-    background: linear-gradient(to right, rgb(215, 215, 215) 0%, rgba(255, 255, 255, 0) 100%);
+
+.carousel::before {
+    background: linear-gradient(to right, rgb(228, 228, 228) 0%, rgba(255, 255, 255, 0) 80%);
     content: "";
     height: 500px;
     position: absolute;
@@ -473,8 +488,8 @@
     left: 0;
   }
 
- .main_four_carousel::after {
-    background: linear-gradient(to left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+ .carousel::after {
+    background: linear-gradient(to left, rgb(253, 252, 252) 0%, rgba(255, 255, 255, 0) 50%);
     content: "";
     height: 500px;
     position: absolute;
@@ -486,15 +501,14 @@
 
 .main_four_carousel-photo {
     width: 500px;
-    height: auto;
+    height: 300px;
 }
 
 .main_four-arrow {
     position: absolute;
     display: flex;
-    gap: 475px;
     z-index: 50;
-    margin: 200px 368px;
+    text-align: center;
     
 }
 
@@ -509,6 +523,7 @@
     padding: 16px;
     box-sizing: border-box;
     box-shadow: #151515 1px 0 12px;
+    left: 370px;
 }
 
 .main_four-arrow-left:hover, .main_four-arrow-right:hover {
@@ -526,6 +541,7 @@
     border-radius: 50px;
     cursor: pointer;
     box-shadow: #151515 1px 0 12px;
+    left: 880px;
 }
 .fixed {
     margin-top: 4px;
@@ -539,7 +555,7 @@
     display: flex;
     gap: 6px;
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
     justify-content: center;
     cursor: pointer;
@@ -774,7 +790,7 @@
     background-image: url(./img/cloud_up.png);
     height: 260px;
     align-items: center;
-    top: 5067px;
+    top: 5072px;
 }
 .cloud_down-seven {
     position: absolute;
@@ -999,4 +1015,20 @@ video {
     font-size: 14px;
     align-items: center;
     margin-top: 15px;
+}
+.main_four_dots-navigation {
+	bottom: 30px;
+	display: flex;
+	gap: 20px;
+}
+.main_four_dots-navigation .crl {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	border-radius: 4px;
+	background-color:  #a06904;
+	transition: 0.5s;
+}
+.main_four_dots-navigation .crl.active, .main_four_dots-navigation .crl:hover {
+	background-color: #ffffe6;
 }
