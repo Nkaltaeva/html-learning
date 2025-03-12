@@ -593,6 +593,7 @@
     left: 880px;
 }
 .fixed {
+    position: relative;
     margin-top: 4px;
     width: 10px;
     height: auto;
