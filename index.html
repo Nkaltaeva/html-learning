@@ -100,28 +100,51 @@
         
         </header>
 
-        <div class="main_nav_fix ">
-            <ul class="main_nav_fix-button">
-                <li class="main_nav_grup">
+        <div id="sliderBar" class="main_nav_fix ">
+            <!-- big Slider Bar -->
+            <div id="bigSliderBar-content" class="main_nav_fix-button">
+                <div class="main_nav_grup"><a href="#" >
                     <img class="main_nav_icon" src="./img/icon/codicon_call-incoming.png" alt="icon">
                     <p class="main_nav_title">Перезвоните мне</p>
-                </li>
-                <li class="main_nav_grup">
+                </a></div>
+                <div class="main_nav_grup"><a href="#" >
                     <img class="main_nav_icon" src="./img/icon/carbon_calculator.png" alt="icon">
                     <p class="main_nav_title">Расчитать стоимость</p>
-                </li>
-                <li class="main_nav_grup">
+                </a></div>
+                <div class="main_nav_grup"><a href="#" >
                     <img class="main_nav_icon" src="./img/icon/carbon_generate-pdf.png" alt="icon">
                     <p class="main_nav_title">Скачайте каталог</p>
-                </li>
-                <li class="main_nav_grup">
+                </a></div>
+                <div class="main_nav_grup"><a href="#">
                     <img class="main_nav_icon-up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
                     <p class="main_nav_title">Наверх</p>
-                </li>
-                <li class="main_nav_arrow">
+                </a></div>
+                <div onclick="closeNav()" class="main_nav_arrow">
                     <img class="fixed" src="./img/icon/fix.png" alt="fixed">
-                </li>
-            </ul>
+                </div>
+            </div>
+            <!-- small Slider Bar -->
+            <div id="smallSliderBar-content" onclick="openNav()" class="main_nav_fix-button-open">
+                <div class="main_nav_grup-open"><a href="#" >
+                    <img class="main_nav_icon-open" src="./img/icon/codicon_call-incoming.png" alt="icon">
+                </a>
+                </div>
+                <div class="main_nav_grup-open"><a href="#" >
+                    <img class="main_nav_icon-open" src="./img/icon/carbon_calculator.png" alt="icon">
+                </a>
+                </div>
+                <div class="main_nav_grup-open"><a href="#" >
+                    <img class="main_nav_icon-open" src="./img/icon/carbon_generate-pdf.png" alt="icon">
+                </a>
+                </div>
+                <div class="main_nav_grup-open"><a href="#">
+                    <img class="main_nav_icon-open up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
+                </a>
+                </div>
+                <div  onclick="openNav()" class="main_nav_grup-open">
+                    <img class="fixed-open" src="./img/icon/icon_close.png" alt="fixed">
+                </div>
+            </div>
         </div>
         <main class="wrapper">
             

@@ -73,25 +73,33 @@
 
 .main_nav_fix {
     position: sticky;
-    
     top: 0;
     bottom: 0;
     z-index: 1000;
-    background-color: #FFB951;
 }
+
 
 .main_nav_fix-button {
    position: absolute;
    right: 0;
    top: 60px;
+   z-index: 1000;
+}
+
+.main_nav_fix-button-open {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 500;
+    display: none;
 }
 
 .main_nav_grup {
     position: relative;
-    z-index: 1000;
-    margin-top: 5px;
+    justify-content: center;
     width: 100px;
     height: 80px;
+    margin-top: 5px;
     border-radius: 10px 0 0 10px;
     padding: 10px 5px;
     background-color: #FF6712;
@@ -101,10 +109,43 @@
     cursor: pointer;
     transition: .5s;
 }
-.main_nav_grup:hover, .main_nav_arrow:hover {
+.main_nav_grup-open {
+    position: relative;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 5px;
+    background-color: #FF6712;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.main_nav_grup:hover, .main_nav_arrow:hover,
+.main_nav_grup-open:hover, .main_nav_arrow-open:hover{
     background-color: #212529;
 }
 
+.main_nav_arrow-open {
+    position: absolute;
+    z-index: 1000;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 5px 0 0 1px;
+    background-color: #FF6712;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+    width: 40px;
+    height: 40px; 
+    cursor: pointer;
+    transition: .5s; 
+}
 .main_nav_arrow {
     position: relative;
     z-index: 1000;
@@ -138,6 +179,14 @@
     width: 22px;
     height: auto;
     margin-top: 10px;
+}
+
+.main_nav_icon-open {
+    width: 32px;
+    height: auto;
+}
+.up {
+    margin-top: 3px;
 }
 
 .main_two {
@@ -547,6 +596,11 @@
     margin-top: 4px;
     width: 10px;
     height: auto;
+}
+.fixed-open {
+    width: 20px;
+    height: 18px;
+    padding: 6px;
 }
 
 .main_four_dots-navigation {
