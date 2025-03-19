@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sliderBar/sliderBar.css">
+    <link rel="stylesheet" href="./carousel/carousel.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
     <title>ЛЮКСБЕТОН</title>
@@ -100,54 +102,54 @@
         
         </header>
 
-        <div id="sliderBar" class="main_nav_fix ">
-            <!-- big Slider Bar -->
-            <div id="bigSliderBar-content" class="main_nav_fix-button">
-                <div class="main_nav_grup"><a href="#" >
-                    <img class="main_nav_icon" src="./img/icon/codicon_call-incoming.png" alt="icon">
-                    <p class="main_nav_title">Перезвоните мне</p>
-                </a></div>
-                <div class="main_nav_grup"><a href="#" >
-                    <img class="main_nav_icon" src="./img/icon/carbon_calculator.png" alt="icon">
-                    <p class="main_nav_title">Расчитать стоимость</p>
-                </a></div>
-                <div class="main_nav_grup"><a href="#" >
-                    <img class="main_nav_icon" src="./img/icon/carbon_generate-pdf.png" alt="icon">
-                    <p class="main_nav_title">Скачайте каталог</p>
-                </a></div>
-                <div class="main_nav_grup"><a href="#">
-                    <img class="main_nav_icon-up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
-                    <p class="main_nav_title">Наверх</p>
-                </a></div>
-                <div onclick="closeNav()" class="main_nav_arrow">
-                    <img class="fixed" src="./img/icon/fix.png" alt="fixed">
-                </div>
-            </div>
-            <!-- small Slider Bar  -->
-            <div id="smallSliderBar-content" onclick="openNav()" class="main_nav_fix-button-open">
-                <div class="main_nav_grup-open"><a href="#" >
-                    <img class="main_nav_icon-open" src="./img/icon/codicon_call-incoming.png" alt="icon">
-                </a>
-                </div>
-                <div class="main_nav_grup-open"><a href="#" >
-                    <img class="main_nav_icon-open" src="./img/icon/carbon_calculator.png" alt="icon">
-                </a>
-                </div>
-                <div class="main_nav_grup-open"><a href="#" >
-                    <img class="main_nav_icon-open" src="./img/icon/carbon_generate-pdf.png" alt="icon">
-                </a>
-                </div>
-                <div class="main_nav_grup-open"><a href="#">
-                    <img class="main_nav_icon-open up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
-                </a>
-                </div>
-                <div  onclick="openNav()" class="main_nav_grup-open">
-                    <img class="fixed-open" src="./img/icon/icon_close.png" alt="fixed">
-                </div>
-            </div>
-        </div>
+        
         <main class="wrapper">
-            
+            <div id="sliderBar" class="sliderBar ">
+                <!-- big Slider Bar -->
+                <div id="bigSliderBar-content" class="sliderBar-button">
+                    <div class="sliderBar_grup"><a href="#" >
+                        <img class="sliderBar_icon" src="./img/icon/codicon_call-incoming.png" alt="icon">
+                        <p class="sliderBar_title">Перезвоните мне</p>
+                    </a></div>
+                    <div class="sliderBar_grup"><a href="#" >
+                        <img class="sliderBar_icon" src="./img/icon/carbon_calculator.png" alt="icon">
+                        <p class="sliderBar_title">Расчитать стоимость</p>
+                    </a></div>
+                    <div class="sliderBar_grup"><a href="#" >
+                        <img class="sliderBar_icon" src="./img/icon/carbon_generate-pdf.png" alt="icon">
+                        <p class="sliderBar_title">Скачайте каталог</p>
+                    </a></div>
+                    <div class="sliderBar_grup"><a href="#">
+                        <img class="sliderBar_icon-up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
+                        <p class="sliderBar_title">Наверх</p>
+                    </a></div>
+                    <div onclick="closeNav()" class="sliderBar_arrow">
+                        <img class="fixed" src="./img/icon/fix.png" alt="fixed">
+                    </div>
+                </div>
+                <!-- small Slider Bar  -->
+                <div id="smallSliderBar-content" onclick="openNav()" class="sliderBar-button-open">
+                    <div class="sliderBar_grup-open"><a href="#" >
+                        <img class="sliderBar_icon-open" src="./img/icon/codicon_call-incoming.png" alt="icon">
+                    </a>
+                    </div>
+                    <div class="sliderBar_grup-open"><a href="#" >
+                        <img class="sliderBar_icon-open" src="./img/icon/carbon_calculator.png" alt="icon">
+                    </a>
+                    </div>
+                    <div class="sliderBar_grup-open"><a href="#" >
+                        <img class="sliderBar_icon-open" src="./img/icon/carbon_generate-pdf.png" alt="icon">
+                    </a>
+                    </div>
+                    <div class="sliderBar_grup-open"><a href="#">
+                        <img class="sliderBar_icon-open up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
+                    </a>
+                    </div>
+                    <div  onclick="openNav()" class="sliderBar_grup-open">
+                        <img class="fixed-open" src="./img/icon/icon_close.png" alt="fixed">
+                    </div>
+                </div>
+            </div>
 
             <div class="cloud_up" ></div>
             <section class="main_one ">
@@ -293,44 +295,54 @@
                         </div>
                     </div>
 
-                    <div class="main_four">
-                        <div class="main_four_heading">
+                    <div class="carousel-block">
+                        <div class="carousel-block_heading">
                             <div class="square_line-1">
                                 <span></span>
                                 <span></span>
                             </div>
-                            <h2 class="main_four_txt">готовые комплексы барбекю</h2>
+                            <h2 class="carousel-block_txt">готовые комплексы барбекю</h2>
                             <div class="square_line-2">
                                 <span></span>
                                 <span></span>
                             </div>
                         </div>
 
-                        <div class="main_four_carousel">
-                            <div class="main_four-arrow">
-                                <img class="main_four-arrow-left prev" src="./img/icon/Arrow_left.png" alt="arrow">
-                            </div>
-                            
-    
-                            <div class="carousel" >
-                                <img class="main_four_carousel-photo item" src="./img/main/three_four/Rectangle 425.png" alt="photo">
-                                <img class="main_four_carousel-photo item" src="./img/main/three_four/Rectangle 425.png" alt="photo">
-                                <img class="main_four_carousel-photo item" src="./img/main/three_four/Rectangle 425.png" alt="photo">
-                                <img class="main_four_carousel-photo item" src="./img/main/three_four/Rectangle 425.png" alt="photo">
-                                <img class="main_four_carousel-photo item" src="./img/main/three_four/Rectangle 425.png" alt="photo">
+                        <div class="carousel-watch">
+                             <div class="carousel-window" >
+                                <div class="carousel" id="carousel-window">
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./carousel/img/Rectangle 425.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./carousel/img/Барбекю-комплекс _Итальянские технологии_.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./carousel/img/Барбекю-комплекс из бетона и полудрагаценного камня.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./carousel/img/МАФ.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./carousel/img/Плитка.png" alt="">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="main_four-arrow">
-                                <img class="main_four-arrow-right next" src="./img/icon/Arrow_right.png" alt="arrow">
+                            <div class="carousel-arrow">
+                                <div class="carousel-arrow-left" id="arrow-left"></div>
+                                <div class="carousel-arrow-right" id="arrow-right"></div>
+                              </div>
+
+                            <div class="main_dots-navigation">
+                                <p class="dot active">&#9679;</p>
+                                <p class="dot ">&#9679;</p>
+                                <p class="dot">&#9679;</p>
+                                <p class="dot">&#9679;</p>
+                                <p class="dot">&#9679;</p>
                             </div>
                          </div>
-                        <div class="main_four_dots-navigation">
-                            <p class="main_four_dots">&#9679;</p>
-                            <p class="main_four_dots">&#9679;</p>
-                            <p class="main_four_dots">&#9679;</p>
-                            <p class="main_four_dots">&#9679;</p>
-                            <p class="main_four_dots">&#9679;</p>
-                        </div>
+                        
                         
                     </div>
 
@@ -560,6 +572,8 @@
         </footer>
 
     <script src="main.js"></script>
+    <script src="./sliderBar/sliderBar.js"></script>
+    <script src="./carousel/carousel.js"></script>
 </body>
 
 </html>

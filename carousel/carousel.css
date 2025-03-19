@@ -1,0 +1,146 @@
+.carousel-block {
+    margin-top: 100px;
+}
+
+.carousel-block_heading {
+    position: relative;
+    width: 620px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    z-index: 5;
+}
+
+.carousel-block_txt {
+    position: relative;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 52px;
+    overflow: hidden;
+}
+.carousel-watch {
+    position: relative;
+    z-index: 6;
+    align-items: center;
+    margin-top: 80px;
+}
+.carousel-window {
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+    border-radius: 20px;
+    transition:  .5s;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-window::before {
+    background: linear-gradient(to right, rgb(228, 228, 228) 0%, rgba(255, 255, 255, 0) 80%);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+    left: 0;
+  }
+
+ .carousel-window::after {
+    background: linear-gradient(to left, rgb(253, 252, 252) 0%, rgba(255, 255, 255, 0) 50%);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+    right: 0;
+    top: 0;
+  }
+  .item {
+    width: 500px;
+    height: 300px;
+}
+.carousel-arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translateX(-50%);
+}
+.carousel-arrow div::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 50px;
+  height: 20px;
+}
+.carousel-arrow :nth-child(1):hover::before {
+  transform: translateX(-140%);
+}
+.carousel-arrow :nth-child(1)::before {
+  transition: all 0.2s ease;
+  transform: translateX(-120%);
+  background: url("https://image.ibb.co/k3fyxK/prev_arrow.png") center no-repeat;
+}
+.carousel-arrow :nth-child(2):hover::before {
+  transform: translateX(40%);
+}
+.carousel-arrow :nth-child(2)::before {
+  transition: all 0.2s ease;
+  transform: translateX(20%);
+  background: url("https://image.ibb.co/m8de4z/next_arrow.png") center no-repeat;
+}
+
+
+.main_dots-navigation {
+    color: #D9D9D9;
+    position: relative;
+    display: flex;
+    gap: 6px;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 4;
+}
+.dot {
+    transition: .3s;
+}
+.dot:hover {
+    color: #FF6712;
+}
+.active {
+    opacity: 1;
+    color: #FF6712;
+  }
+
+
+
+.main_five {
+    height: 643px;
+}
+.main_five_heading {
+    position: relative;
+    width: 900px;
+    font-size: 52px;
+    margin: 100px 0 80px 100px;
+    z-index: 3;
+}
+
+.main_five_txt {
+    position: relative;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    box-sizing: border-box;
+}
+
