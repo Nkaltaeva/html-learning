@@ -3,6 +3,16 @@
     padding: 0;
     font-family: 'Akzidenz-Grotesk Pro', Arial, Helvetica, sans-serif;
 }
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: local("Akzidenz-Grotesk Pro"), url("./fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    src: local("Akzidenz-Grotesk Pro Extra"), url("/fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
+    font-display: swap;
+}
 
 .main_one {
     position: relative;
@@ -582,7 +592,7 @@
     background-image: url(./img/cloud_up.png);
     height: 260px;
     align-items: center;
-    top: 5072px;
+    top: 5076px;
 }
 .cloud_down-seven {
     position: absolute;

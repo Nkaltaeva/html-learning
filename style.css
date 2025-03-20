@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'Akzidenz-Grotesk Pro';
-    src: local("FAkzidenz-Grotesk Pro"), url("./fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+    src: local("Akzidenz-Grotesk Pro"), url("./fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
     font-display: swap;
 }
 @font-face {

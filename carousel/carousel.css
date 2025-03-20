@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: local("Akzidenz-Grotesk Pro"), url("../fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro Extra';
+  src: local("Akzidenz-Grotesk Pro Extra"), url("../fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
+  font-display: swap;
+}
 .carousel-block {
     margin-top: 100px;
 }
@@ -64,38 +74,6 @@
     width: 500px;
     height: 300px;
 }
-.carousel-arrow {
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  transform: translateX(-50%);
-}
-.carousel-arrow div::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  width: 50px;
-  height: 20px;
-}
-.carousel-arrow :nth-child(1):hover::before {
-  transform: translateX(-140%);
-}
-.carousel-arrow :nth-child(1)::before {
-  transition: all 0.2s ease;
-  transform: translateX(-120%);
-  background: url("https://image.ibb.co/k3fyxK/prev_arrow.png") center no-repeat;
-}
-.carousel-arrow :nth-child(2):hover::before {
-  transform: translateX(40%);
-}
-.carousel-arrow :nth-child(2)::before {
-  transition: all 0.2s ease;
-  transform: translateX(20%);
-  background: url("https://image.ibb.co/m8de4z/next_arrow.png") center no-repeat;
-}
-
 
 .main_dots-navigation {
     color: #D9D9D9;

@@ -5,7 +5,7 @@ let arrowLeft = document.getElementById("arrow-left"),
   dotsWrap = document.getElementsByClassName("main_dots-navigation")[0],
   dots = document.getElementsByClassName("dot"),
   left = 0,
-  imgWidth = 520;
+  imgWidth = "520px";
 
 // Функция перелистывания слайдов
 slideTo = (direction) => {
