@@ -108,43 +108,43 @@
             <div id="sliderBar" class="sliderBar ">
                 <!-- big Slider Bar -->
                 <div id="bigSliderBar-content" class="sliderBar-button">
-                    <div class="sliderBar_grup"><a href="#" >
+                    <div class="sliderBar_grup"><buttom >
                         <img class="sliderBar_icon" src="./img/icon/codicon_call-incoming.png" alt="icon">
                         <p class="sliderBar_title">Перезвоните мне</p>
-                    </a></div>
-                    <div class="sliderBar_grup"><a href="#" >
+                    </buttom></div>
+                    <div class="sliderBar_grup"><buttom >
                         <img class="sliderBar_icon" src="./img/icon/carbon_calculator.png" alt="icon">
                         <p class="sliderBar_title">Расчитать стоимость</p>
-                    </a></div>
-                    <div class="sliderBar_grup"><a href="#" >
+                    </buttom></div>
+                    <div class="sliderBar_grup"><buttom>
                         <img class="sliderBar_icon" src="./img/icon/carbon_generate-pdf.png" alt="icon">
                         <p class="sliderBar_title">Скачайте каталог</p>
-                    </a></div>
-                    <div class="sliderBar_grup"><a href="#">
+                    </buttom></div>
+                    <div class="sliderBar_grup" ><buttom id="scroll-topBtnBig" >
                         <img class="sliderBar_icon-up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
-                        <p class="sliderBar_title">Наверх</p>
-                    </a></div>
+                        <p class="sliderBar_title ">Наверх</p>
+                    </buttom></div>
                     <div onclick="closeNav()" class="sliderBar_arrow">
                         <img class="fixed" src="./img/icon/fix.png" alt="fixed">
                     </div>
                 </div>
                 <!-- small Slider Bar  -->
                 <div id="smallSliderBar-content" onclick="openNav()" class="sliderBar-button-open">
-                    <div class="sliderBar_grup-open"><a href="#" >
+                    <div class="sliderBar_grup-open"><button>
                         <img class="sliderBar_icon-open" src="./img/icon/codicon_call-incoming.png" alt="icon">
-                    </a>
+                    </button>
                     </div>
-                    <div class="sliderBar_grup-open"><a href="#" >
+                    <div class="sliderBar_grup-open"><button >
                         <img class="sliderBar_icon-open" src="./img/icon/carbon_calculator.png" alt="icon">
-                    </a>
+                    </button>
                     </div>
-                    <div class="sliderBar_grup-open"><a href="#" >
+                    <div class="sliderBar_grup-open"><button>
                         <img class="sliderBar_icon-open" src="./img/icon/carbon_generate-pdf.png" alt="icon">
-                    </a>
+                    </button>
                     </div>
-                    <div class="sliderBar_grup-open"><a href="#">
+                    <div class="sliderBar_grup-open"><button id="scroll-topBtnSmall">
                         <img class="sliderBar_icon-open up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
-                    </a>
+                    </button>
                     </div>
                     <div  onclick="openNav()" class="sliderBar_grup-open">
                         <img class="fixed-open" src="./img/icon/icon_close.png" alt="fixed">
@@ -310,38 +310,31 @@
                         </div>
 
                         <div class="carousel-watch">
-                             <div class="carousel-window" >
-                                <div class="carousel" id="carousel-window">
+                            <div class="carousel-window" >
+                                <div class="carousel" id="carousel" >
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/Rectangle 425.png" alt="">
+                                        <img class="item" src="./carousel/img/bbq.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/Барбекю-комплекс _Итальянские технологии_.png" alt="">
+                                        <img class="item" src="./carousel/img/bbqplase.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/Барбекю-комплекс из бетона и полудрагаценного камня.png" alt="">
+                                        <img class="item" src="./carousel/img/fireplase.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/МАФ.png" alt="">
+                                        <img class="item" src="./carousel/img/maf.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/Плитка.png" alt="">
+                                        <img class="item" src="./carousel/img/tile.png" alt="">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="carousel-arrow">
-                                <div class="carousel-arrow-left" id="arrow-left"></div>
-                                <div class="carousel-arrow-right" id="arrow-right"></div>
-                              </div>
-
-                            <div class="main_dots-navigation">
-                                <p class="dot active">&#9679;</p>
-                                <p class="dot ">&#9679;</p>
-                                <p class="dot">&#9679;</p>
-                                <p class="dot">&#9679;</p>
-                                <p class="dot">&#9679;</p>
+                                <button class="carousel-arrow-left" id="arrow-left" onclick="handleCarouselMove(false)"></button>
+                                <button class="carousel-arrow-right" id="arrow-right" onclick="handleCarouselMove()"></button>
                             </div>
+
                          </div>
                         
                         

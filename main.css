@@ -14,6 +14,7 @@
     font-display: swap;
 }
 
+
 .main_one {
     position: relative;
     height: 350px;
@@ -386,7 +387,27 @@
 
 
 
+.main_five {
+    height: 643px;
+}
+.main_five_heading {
+    position: relative;
+    width: 900px;
+    font-size: 52px;
+    margin: 100px 0 80px 100px;
+    z-index: 3;
+}
 
+.main_five_txt {
+    position: relative;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    box-sizing: border-box;
+}
 
 
 

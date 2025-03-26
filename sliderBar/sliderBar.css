@@ -63,6 +63,12 @@
     cursor: pointer;
     transition: .5s;
 }
+
+.sliderBar_grup-open button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .sliderBar_grup:hover, .sliderBar_arrow:hover,
 .sliderBar_grup-open:hover, .sliderBar_arrow-open:hover{
     background-color: #212529;
