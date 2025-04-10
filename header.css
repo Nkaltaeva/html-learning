@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Akzidenz-Grotesk Pro', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: local("Akzidenz-Grotesk Pro"), url("./fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    src: local("Akzidenz-Grotesk Pro Extra"), url("/fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
+    font-display: swap;
+}
+body {  
+    color: rgb(255, 255, 255);
+    background-color: black;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-header {
+    height: 800px;
+    background-color: #151515;
+}
+.fireplace-header {
+    position: absolute;
+    width: 100%;
+    background-image: url(./img/header/комплекс.png);
+    background-repeat: no-repeat;
+    background-position:  right 50%;
+    height: 750px;
+}
+.piople-header {
+    position: absolute;
+    width: 100%;
+    background-image:  url(./img/header/image\ 1701.png);
+    background-repeat: no-repeat;
+    background-position:  left 50%;
+    height: 700px;
+}
+.fire-header {
+    position: absolute;
+    width: 100%;
+    background-image:  url(./img/header/image\ 1703\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: bottom 256px right -30% !important;
+    height: 750px;
+}
+
+.nav_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.nav_logo_header {
+    position: relative;
+    width: 180px;
+    height: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nav_ul_group_header {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.menu_block .menu-btn {
+    display: none;
+  }
+  
+.nav-li-header {
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-li-header:hover {
+    color: #FF9900;
+}
+.nav_contact_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 10px;
+    text-shadow: #000000 1px 0 7px;
+}
+.nav_network_header {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.nav_title_header {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+}
+.nav_phone_header {
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    width: 140px;
+    height: 33px;
+}
+.nav_phone_header:hover {
+    color: #FF9900;
+}
+.square_line-1, .square_line-2{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.square_line-1 span {
+    width: 29px;
+    height: 29px;
+    border-top: 4px solid orange;
+}
+.square_line-1 span:last-child {
+    border-right: 4px solid orange;
+}
+.square_line-1 span:first-child {
+    border-left: 4px solid orange;
+}
+
+.square_line-2 span {
+    width: 29px;
+    height: 29px;
+    border-bottom: 4px solid orange;
+}
+.square_line-2 span:last-child {
+    border-right: 4px solid orange;
+}
+.square_line-2 span:first-child {
+    border-left: 4px solid orange;
+}
+
+.banner_header {
+    width: 490px;
+    margin-top: 50px;
+}
+
+.banner_text_heading {
+    position: relative;
+    padding: 4px 31px;
+    box-sizing: border-box;
+    width: 490px;
+    font-size: 52px;
+    letter-spacing: 4px;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    text-transform: uppercase;
+}
+
+.banner_text_title{
+    position: relative;
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    margin: 8px 0 20px 0;
+    font-size: 28px;
+    width: 650px;
+}
+
+.banner_icon-text {
+    position: relative;
+    font-size: 14px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+.banner_icon_tbl {
+    width: 35px;
+    height: auto;
+}
+
+.button_price {
+    position: relative;
+    padding: 22px 49px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    border-radius: 183px;
+    background: linear-gradient(95.37deg, #FF6712 46.88%, #FF9900 100%);
+    border: none;
+    font-family: 'Akzidenz-Grotesk Pro Extra';
+    font-size: 22px;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+.button_price:hover {
+    background: #FF6712;
+    color: #151515;
+}
+
+
+@media screen and (max-width: 768px) { 
+    .container {
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .background-header {
+        height: 660px;
+    }
+    .fireplace-header {
+        position: absolute;
+        width: 100%;
+        background-image: url(./img/header/комплекс.png);
+        background-repeat: no-repeat;
+        background-position:  top 0px right -84% !important;
+        background-size: 600px;
+        height: 650px;
+    }
+    .piople-header {
+        position: absolute;
+        width: 100%;
+        background-image:  url(./img/header/image\ 1701.png);
+        background-repeat: no-repeat;
+        background-position:  top -10px left 570% !important;
+        height: 700px;
+        background-size: contain;
+    }
+    .fire-header {
+        position: absolute;
+        width: 100%;
+        background-image:  url(./img/header/image\ 1703\ \(1\).png);
+        background-repeat: no-repeat;
+        background-position: top 0px right -500px !important;
+        height: 750px;
+        background-size: contain;
+    }
+    .nav_header {
+        gap: 30px;
+        align-items: center;
+    }
+    .nav_logo_header {
+        width: 100px;
+        height: auto;
+        margin-top: 15px;
+    }
+    .nav_ul_group_header {
+        gap: 15px;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .nav_title_header, .nav_title_header_dot, .nav_phone_header {
+        display: none;
+    }
+    .nav_img_header {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .nav_contact_phone:hover, .nav_network_header:hover {
+        filter: drop-shadow(1px 1px 0 #040404)
+                drop-shadow(0 0 5px #FF6712);
+    }
+    .banner_header {
+        width: 360px;
+        margin-top: 40px;
+    }
+    .banner_text_heading {
+        width: 390px;
+        font-size: 36px;
+    }
+    .banner_text_title{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    .banner_icon-text {
+        font-size: 12px;
+        gap: 10px;
+    }
+    .button_price {
+        padding: 16px 30px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+    .background-header {
+        height: 860px;
+    }
+    .banner_header {
+        width: 300px;
+        margin-top: 20px;
+    }    
+    .banner_text_heading {
+        width: 300px;
+        font-size: 48px;
+    }
+    .banner_text_title{
+        margin: 76px 0 300px 20px;
+        width: 280px;
+    }
+    .banner_icon-text {
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu_block {
+        width: 50px;
+    }
+    .menu_block .nav_ul_group_header {
+        position: absolute;
+        list-style: none;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        opacity: 0;
+
+      }
+      .menu_block .menu-icon {
+        position: absolute;
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 40px;
+        position: relative;
+        user-select: none;
+        left: 30px;
+        top: 5px;
+      }
+      
+      .nav_ul_group_header {
+        list-style: none;
+        overflow: hidden;
+        width: 90%;
+        z-index: 1000;
+        top: 10px;
+        background-color: none;
+      }
+       .menu_block .menu-icon .navicon {
+        background: #ffffff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 25px;
+      }
+      
+      .menu_block .menu-icon .navicon:before,
+      .menu_block .menu-icon .navicon:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+      
+      .menu_block .menu-icon .navicon:before {
+        top: 5px;
+      }
+      
+      .menu_block .menu-icon .navicon:after {
+        top: -5px;
+      }
+      .menu_block .menu-btn:checked ~ .nav_ul_group_header {
+        display: block;
+        max-height: 450px;
+        padding: 30px;
+        box-sizing: border-box;
+        margin: 50px 0 0 -220px;
+        text-align: right;
+        text-shadow: #000000 1px 0 7px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 56px;
+        color: rgb(255, 255, 255);
+        opacity: 1;
+        background-color: #1c1c1cdd;
+      }
+      
+      .menu_block .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+      
+      .menu_block .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+      .menu_block .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+      .menu_block .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .menu_block .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+      .nav_img_header {
+        position: absolute;
+        left: 150px;
+    }
+    .piople-header {
+        position: absolute;
+        width: 100%;
+        background-image:  url(./img/header/image\ 1701.png);
+        background-repeat: no-repeat;
+        background-position:  top 0% right -200px !important;
+    }
+    .fireplace-header {
+        background-image: url(./img/header/комплекс.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:  top 389px right -25px !important;
+        height: 880px;
+    }
+
+    .fire-header {
+        background-image:  url(./img/header/image\ 1703\ \(1\).png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:  top 76px right 2px !important;
+        height: 880px;
+        transform: scale(-1, -1);
+        opacity: 0.4;
+    }
+    .cloud_up {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 169px;
+        margin-top: 60px;
+    }
+    
+    .cloud_down {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 169px;
+        margin-top: 1343px;
+    }
+ }

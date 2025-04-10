@@ -98,4 +98,58 @@ position: relative;
 .footer-phone-take:hover {
     color: #FF9900;
 }
+@media screen and (max-width: 768px) {
+    footer {
+        gap: 35px;
+    }
+    .footer-logo-img {
+        width: 150px;
+        height: auto;
+    }
+    .footer-nav {
+        gap: 30px;
+        font-size: 12px;
+    }
+    .footer-contact, .footer-schedule-dot {
+        display: none;
+    }
+    .footer-contact-web {
+        margin-right: 0px;
+    }
 
+    .footer-phone-img img {
+        display: none;
+    }
+    .footer-nav {
+        width: 235px;
+    }
+    .footer-schedule {
+        width: 221px;
+        font-size: 15px;
+    }
+    .footer-phone-take {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    footer {
+        display: block;
+        text-align: center;
+        width: 300px;
+    }
+    .footer-nav {
+        margin: 20px 0 0 60px;
+        text-align: left;
+    }
+    .footer-schedule {
+        margin: 30px 0 30px 60px;
+    }
+    .footer-phone-img {
+        margin: 30px 0 30px 60px;
+    }
+    .footer-phone-title {
+        text-align: center;
+    }
+}

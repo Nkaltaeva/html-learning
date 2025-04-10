@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: local("Akzidenz-Grotesk Pro"), url("../fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro Extra';
+  src: local("Akzidenz-Grotesk Pro Extra"), url("../fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
+  font-display: swap;
+}
+.carousel-block {
+    margin-top: 100px;
+}
+
+.carousel-block_heading {
+    position: relative;
+    width: 620px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    z-index: 5;
+}
+
+.carousel-block_txt {
+    position: relative;
+    font-family: 'Akzidenz-Grotesk Pro Extra'; 
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 52px;
+
+}
+
+.carousel-watch {
+  position: relative;
+  width: 100%; 
+ height: 285px;
+  z-index: 6;
+  margin-top: 80px;
+}
+
+.carousel-window {
+  position: relative;
+  border-radius: 20px;
+  height: 285px;
+  width: 100%;
+  z-index: 9;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-window::before {
+  background: linear-gradient(to right, rgb(228, 228, 228) 0%, rgba(255, 255, 255, 0) 80%);
+  content: "";
+  height: 285px;
+  position: absolute;
+  width: 200px;
+  z-index: 10;
+  left: 0;
+  border-radius: 14px;
+}
+.carousel-window::after {
+  background: linear-gradient(to left, rgb(253, 252, 252) 0%, rgba(255, 255, 255, 0) 50%);
+  content: "";
+  height: 285px;
+  position: absolute;
+  width: 200px;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  border-radius: 14px;
+}
+.carousel {
+  display: flex;
+  transition: all 1s ease-in-out;
+  gap: 20px;
+  transition: transform 0.3s ease;
+  list-style: none;
+  padding: 0;
+}
+
+ .carousel-watch-photo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+    scroll-snap-align: start;
+    width: 420px;
+    height: 285px;
+    border-radius: 20px;
+  }
+
+.carousel-arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.carousel-arrow{
+  position: absolute;
+  z-index: 900;
+  top: 110px;
+  justify-content: center;
+  display: flex;
+  gap: 400px;
+
+}
+.carousel-arrow-left, .carousel-arrow-right {
+  position: relative;
+  background-color: #f89d68;
+  border: none;
+  border-radius: 50%;
+  transition: .1s;
+}
+
+.carousel-arrow-left:hover,
+.carousel-arrow-left:focus {
+    background-color: #FF6712;
+    cursor: pointer;
+    
+}
+.carousel-arrow-right:hover,
+.carousel-arrow-right:focus {
+    background-color: #FF6712;
+    cursor: pointer;
+}
+
+#arrow-left {
+    background-image: url(./img/Arrow_left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+#arrow-right {
+    background-image: url(./img/Arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+  .carousel_dots_navigation {
+    color: #878585;
+    position: relative;
+    display: flex;
+    gap: 6px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 500;
+}
+.carousel_dots {
+    transition: .2s;
+}
+.carousel_dots:hover {
+    color: #FF6712;
+}
+@media screen and (max-width:768px) {
+  .carousel-block_heading {
+    margin-left: 50px;
+  }
+  .carousel-window {
+    width: 100%;
+    height: 160px;
+  }
+  .carousel-watch {
+    height: 160px;
+    margin-bottom: 132px;
+  }
+  .carousel-window::before {
+    height: 160px;
+  }
+  .carousel-window::after {
+    height: 160px;
+  }
+
+  .carousel-watch-photo {
+    height: 160px;
+  }
+    .item {
+      width: 230px;
+      height: 160px;
+  }
+  .carousel-arrow {
+    top: 180px;
+    gap: 300px;
+  }
+  .carousel_dots_navigation {
+    margin-top: 15px;
+}
+}
+
+@media screen and (max-width: 430px) {
+  .carousel-block {
+    margin-top: 50px;
+}
+  .carousel-block_heading {
+    width: 300px;
+    margin-left: 0px;
+  }
+  .carousel-window {
+    width: 300px;
+    height: 180px;
+
+  }
+  .carousel-watch-photo {
+    height: 180px;
+    width: 300px;
+  }
+  .carousel-watch {
+    height: 180px;
+    width: 300px;
+  }
+  
+  .item {
+    height: 180px;
+    width: 300px;
+  }
+  .carousel-window::before, .carousel-window::after {
+    display: none;
+  }
+  
+  .carousel-arrow {
+    justify-content: left;
+    top: 205px;
+    width: 300px;
+    display: flex;
+    gap: 200px;
+  }
+  .carousel_dots_navigation {
+    gap: 6px;
+    font-size: 25px;
+    margin-top: 32px;
+}
+}
+
+

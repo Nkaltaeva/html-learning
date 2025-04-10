@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./sliderBar/sliderBar.css">
-    <link rel="stylesheet" href="./carousel/carousel.css">
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
-    
+    <link rel="stylesheet" href="./components/sliderBar/sliderBar.css">
+    <link rel="stylesheet" href="./components/carousel/carousel.css">
     <title>ЛЮКСБЕТОН</title>
     <meta name="description" content="ЛЮКСБЕТОН - Модульный барбекю комплекс">
 </head>
@@ -30,18 +29,23 @@
                         <img class="nav_logo_header" src="./img/logo.png" alt="logo">
                     </a>
                 
-                    <ul class="nav_ul_group_header">
-                        <li><a class="nav-li-header" href="#">Главная</a></li>
-                        <li><a class="nav-li-header" href="#">Каталог</a></li>
-                        <li><a class="nav-li-header" href="#">Фотогалерея</a></li>
-                        <li><a class="nav-li-header" href="#">Акции</a></li>
-                        <li><a class="nav-li-header" href="#">О компании</a></li>
-                        <li><a class="nav-li-header" href="#">Проекты</a></li>
-                        <li><a class="nav-li-header" href="#">Контакты</a></li>
-                    </ul>
-                    <div>
+                    
+                    <div class="menu_block">
+                        <input class="menu-btn" type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <ul class="nav_ul_group_header" >
+                          <li><a class="nav-li-header" href="#">Главная</a></li>
+                          <li><a class="nav-li-header" href="#">Каталог</a></li>
+                          <li><a class="nav-li-header" href="#">Фотогалерея</a></li>
+                          <li><a class="nav-li-header" href="#">Акции</a></li>
+                          <li><a class="nav-li-header" href="#">О компании</a></li>
+                          <li><a class="nav-li-header" href="#">Проекты</a></li>
+                          <li><a class="nav-li-header" href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav_img_header">
                         <div class="nav_contact_header">
-                            <img src="./img/icon/Ellipse 29.png" alt="logo">
+                            <img class="nav_title_header_dot" src="./img/icon/Ellipse 29.png" alt="logo">
                             <p class="nav_title_header">Мы онлайн, пишите</p>
                             <a href="https://wa.me/83512174718">
                                 <img class="nav_network_header" src="./img/icon/logos_whatsapp.png" alt="logo">
@@ -51,10 +55,10 @@
                             </a>
                             
                         </div>
-                        <div class="nav_contact_header">
-                            <img src="./img/icon/bxs_phone.png" alt="logo">
-                            <a class="nav_phone_header" href="tel:+73512174718" target="_blank">+7 (351) 217-47-18</a>
-                        </div>
+                        <a  class="nav_contact_header" href="tel:+73512174718" target="_blank">
+                            <img class="nav_contact_phone" src="./img/icon/bxs_phone.png" alt="logo">
+                            <p class="nav_phone_header">+7 (351) 217-47-18</p>
+                        </a>
                     </div>
                 </nav>
                 <section class="container">
@@ -109,45 +113,45 @@
                 <!-- big Slider Bar -->
                 <div id="bigSliderBar-content" class="sliderBar-button">
                     <div class="sliderBar_grup"><buttom >
-                        <img class="sliderBar_icon" src="./img/icon/codicon_call-incoming.png" alt="icon">
+                        <img class="sliderBar_icon" src="./components/sliderBar/icon/call.png" alt="icon">
                         <p class="sliderBar_title">Перезвоните мне</p>
                     </buttom></div>
                     <div class="sliderBar_grup"><buttom >
-                        <img class="sliderBar_icon" src="./img/icon/carbon_calculator.png" alt="icon">
+                        <img class="sliderBar_icon" src="./components/sliderBar/icon/calculator.png" alt="icon">
                         <p class="sliderBar_title">Расчитать стоимость</p>
                     </buttom></div>
                     <div class="sliderBar_grup"><buttom>
-                        <img class="sliderBar_icon" src="./img/icon/carbon_generate-pdf.png" alt="icon">
+                        <img class="sliderBar_icon" src="./components/sliderBar/icon/pdf.png" alt="icon">
                         <p class="sliderBar_title">Скачайте каталог</p>
                     </buttom></div>
                     <div class="sliderBar_grup" ><buttom id="scroll-topBtnBig" >
-                        <img class="sliderBar_icon-up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
+                        <img class="sliderBar_icon-up" src="./components/sliderBar/icon/arrow_up.png" alt="icon">
                         <p class="sliderBar_title ">Наверх</p>
                     </buttom></div>
                     <div onclick="closeNav()" class="sliderBar_arrow">
-                        <img class="fixed" src="./img/icon/fix.png" alt="fixed">
+                        <img class="fixed" src="./components/sliderBar/icon/fix_right.png" alt="fixed">
                     </div>
                 </div>
                 <!-- small Slider Bar  -->
                 <div id="smallSliderBar-content" onclick="openNav()" class="sliderBar-button-open">
                     <div class="sliderBar_grup-open"><button>
-                        <img class="sliderBar_icon-open" src="./img/icon/codicon_call-incoming.png" alt="icon">
+                        <img class="sliderBar_icon-open" src="./components/sliderBar/icon/call.png" alt="icon">
                     </button>
                     </div>
                     <div class="sliderBar_grup-open"><button >
-                        <img class="sliderBar_icon-open" src="./img/icon/carbon_calculator.png" alt="icon">
+                        <img class="sliderBar_icon-open" src="./components/sliderBar/icon/calculator.png" alt="icon">
                     </button>
                     </div>
                     <div class="sliderBar_grup-open"><button>
-                        <img class="sliderBar_icon-open" src="./img/icon/carbon_generate-pdf.png" alt="icon">
+                        <img class="sliderBar_icon-open" src="./components/sliderBar/icon/pdf.png" alt="icon">
                     </button>
                     </div>
                     <div class="sliderBar_grup-open"><button id="scroll-topBtnSmall">
-                        <img class="sliderBar_icon-open up" src="./img/icon/bi_box-arrow-in-up.png" alt="icon">
+                        <img class="sliderBar_icon-open up" src="./components/sliderBar/icon/arrow_up.png" alt="icon">
                     </button>
                     </div>
                     <div  onclick="openNav()" class="sliderBar_grup-open">
-                        <img class="fixed-open" src="./img/icon/icon_close.png" alt="fixed">
+                        <img class="fixed-open" src="./components/sliderBar/icon/close.png" alt="fixed">
                     </div>
                 </div>
             </div>
@@ -269,10 +273,8 @@
                                 
                         </div>
                         <div class="block-point point4">
-                            <div>
                                 <h3 class="block-point-h3">Модульность</h3>
-                                <p class="block-point-p">Индивидуальные варианты исполнения вашей зоны барбекю!</p>
-                            </div>
+                                <p class="block-point-p">Индивидуальные варианты <br/>исполнения вашей зоны <br/>барбекю!</p>
                             <div class="block-point-img4"></div>
                         </div>
                     </div>
@@ -313,26 +315,50 @@
                             <div class="carousel-window" >
                                 <div class="carousel" id="carousel" >
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/bbq.png" alt="">
+                                        <img class="item" src="./components/carousel/img/bbq.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/bbqplase.png" alt="">
+                                        <img class="item" src="./components/carousel/img/bbqplase.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/fireplase.png" alt="">
+                                        <img class="item" src="./components/carousel/img/fireplase.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/maf.png" alt="">
+                                        <img class="item" src="./components/carousel/img/maf.png" alt="">
                                     </div>
                                     <div class="carousel-watch-photo">
-                                        <img class="item" src="./carousel/img/tile.png" alt="">
+                                        <img class="item" src="./components/carousel/img/tile.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./components/carousel/img/bbq.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./components/carousel/img/bbqplase.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./components/carousel/img/fireplase.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./components/carousel/img/maf.png" alt="">
+                                    </div>
+                                    <div class="carousel-watch-photo">
+                                        <img class="item" src="./components/carousel/img/tile.png" alt="">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="carousel-arrow">
-                                <button class="carousel-arrow-left" id="arrow-left" onclick="handleCarouselMove(false)"></button>
-                                <button class="carousel-arrow-right" id="arrow-right" onclick="handleCarouselMove()"></button>
+                                <button class="carousel-arrow-left" id="arrow-left" ></button>
+                                <button class="carousel-arrow-right" id="arrow-right" ></button>
+                            </div>
+
+                            <div class="carousel_dots_navigation">
+                                <p class="carousel_dots">&#9679;</p>
+                                <p class="carousel_dots">&#9679;</p>
+                                <p class="carousel_dots">&#9679;</p>
+                                <p class="carousel_dots">&#9679;</p>
+                                <p class="carousel_dots">&#9679;</p>
+                                <p class="carousel_dots">&#9679;</p>
                             </div>
 
                          </div>
@@ -444,8 +470,10 @@
             <section  class="main_seven">
                 <div class="container">
                     <div class="vidio-player">
-                        <video src="https://luxbeton.ru/images/about.mp4" controls="controls" 
+                        <video class="video_descope" src="https://luxbeton.ru/images/about.mp4" controls="controls" 
                     poster="./img/main/seven/видео.png" ></video>
+                    <video class="video_phone" src="https://luxbeton.ru/images/about.mp4" controls="controls" 
+                    poster="./img/main/seven/video.png" ></video>
                     </div>
                     
 
@@ -549,7 +577,7 @@
                 
             </div>
             <div class="footer-schedule">
-                <p class="" style="color: #00B25C;">&#9679;</p>
+                <p class="footer-schedule-dot" style="color: #00B25C;">&#9679;</p>
                 <div>
                     <p><b>Пн-пт</b> с 9.00 до 18.30</p>
                     <p><b>Сб-вс</b> с 9.00 до 17.30</p>
@@ -566,8 +594,9 @@
         </footer>
 
     <script src="main.js"></script>
-    <script src="./sliderBar/sliderBar.js"></script>
-    <script src="./carousel/carousel.js"></script>
+    <script src="./components/sliderBar/scroll.js"></script>
+    <script src="./components/carousel/carousel.js"></script>
+    <script src="./components/sliderBar/slider.js"></script>
 </body>
 
 </html>
