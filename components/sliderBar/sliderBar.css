@@ -145,7 +145,7 @@
     padding: 6px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .sliderBar-button {
         top: 0px;
      }
@@ -154,20 +154,17 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 550px)  {
     .sliderBar {
-        position: sticky;
-        margin-bottom: -20px;
-        bottom: 0;
+        background-color: #FF6712;
+        top: calc(100% - 13%);
+        
     }
     .sliderBar-button {
         display: inline-flex;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 300px;
-        background-color: #FF6712;
-
+        position: sticky;
+        width: 100%;
+        
     }
     .sliderBar_arrow {
         display: none;
@@ -175,18 +172,12 @@
     .sliderBar_grup {
         position: relative;
         justify-content: center;
-        width: auto;
-        height: 75px;
-        padding:  5px;
+        width: 25%;
         font-size: 12px;
         border-radius: 0;
-        margin-top: 277px;
-        margin-bottom: 0;
     }
     .sliderBar_grup:hover, .sliderBar_arrow:hover {
-    background-color: #212529;
-    width: auto;
-    height: 75px;
-    
+    background-color: #ff7627;
+    width: auto;    
 }
 }

@@ -17,7 +17,7 @@
     width: 620px;
     padding: 10px;
     box-sizing: border-box;
-    margin-left: 350px;
+    margin-left: 25%;
     z-index: 5;
 }
 
@@ -35,7 +35,7 @@
 .carousel-watch {
   position: relative;
   width: 100%; 
- height: 285px;
+  height: 285px;
   z-index: 6;
   margin-top: 80px;
 }
@@ -89,7 +89,7 @@
 
 .item {
     scroll-snap-align: start;
-    width: 420px;
+    width: 450px;
     height: 285px;
     border-radius: 20px;
   }
@@ -97,7 +97,6 @@
 .carousel-arrow {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
 }
@@ -162,75 +161,73 @@
 .carousel_dots:hover {
     color: #FF6712;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 1200px) {
   .carousel-block_heading {
-    margin-left: 50px;
-  }
+    margin-left: 15%;
+}
   .carousel-window {
     width: 100%;
-    height: 160px;
+    height: 210px;
   }
   .carousel-watch {
-    height: 160px;
+    height: 210px;
     margin-bottom: 132px;
   }
   .carousel-window::before {
-    height: 160px;
+    height: 210px;
   }
   .carousel-window::after {
-    height: 160px;
+    height: 210px;
   }
 
   .carousel-watch-photo {
-    height: 160px;
+    height: 210px;
   }
-    .item {
-      width: 230px;
-      height: 160px;
+  .item {
+    width: 294px;
+    height: 210px;
   }
   .carousel-arrow {
-    top: 180px;
-    gap: 300px;
+    top: 90px;
+    gap: 282px;
   }
   .carousel_dots_navigation {
     margin-top: 15px;
 }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 800px) {
   .carousel-block {
     margin-top: 50px;
 }
-  .carousel-block_heading {
-    width: 300px;
-    margin-left: 0px;
-  }
+.carousel-block_heading {
+  width: 100%;
+  margin-left: 0;
+}
   .carousel-window {
-    width: 300px;
-    height: 180px;
+    width: 100%;
+    height: 400px;
 
   }
   .carousel-watch-photo {
-    height: 180px;
-    width: 300px;
+    height: 400px;
+    width: 100%;
   }
   .carousel-watch {
-    height: 180px;
-    width: 300px;
+    height: 400px;
+    width: 100%;
   }
   
   .item {
-    height: 180px;
-    width: 300px;
+    height: 400px;
+    width: 100%;
   }
   .carousel-window::before, .carousel-window::after {
     display: none;
   }
   
   .carousel-arrow {
-    justify-content: left;
-    top: 205px;
-    width: 300px;
+    top: 421px;
     display: flex;
     gap: 200px;
   }
@@ -239,6 +236,31 @@
     font-size: 25px;
     margin-top: 32px;
 }
+}
+@media screen and (max-width: 550px) {
+  .carousel-window {
+    width: 100%;
+    height: 200px;
+
+  }
+  .carousel-watch-photo {
+    height: 200px;
+    width: 100%;
+  }
+  .carousel-watch {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .item {
+    height: 200px;
+    width: 100%;
+  }
+  .carousel-arrow {
+    top: 223px;
+    display: flex;
+    gap: 150px;
+  }
 }
 
 
