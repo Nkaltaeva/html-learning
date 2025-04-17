@@ -157,7 +157,7 @@
 @media screen and (max-width: 550px)  {
     .sliderBar {
         background-color: #FF6712;
-        top: calc(100% - 13%);
+        top: calc(100% - 84px);
         
     }
     .sliderBar-button {
@@ -177,7 +177,7 @@
         border-radius: 0;
     }
     .sliderBar_grup:hover, .sliderBar_arrow:hover {
-    background-color: #ff7627;
-    width: auto;    
+        background-color: #FF6712;
+        width: 25%;   
 }
 }

@@ -1391,7 +1391,7 @@ video {
         width: 100%;
     }
     .main_one_grup :nth-child(1) {
-        margin-top: 450px;
+        margin-top: 300px;
     }
     .main_one_img1, .main_one_img2, .main_one_img3, .main_one_img4 {
         width: 200px;
