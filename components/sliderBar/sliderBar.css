@@ -157,13 +157,13 @@
 @media screen and (max-width: 550px)  {
     .sliderBar {
         background-color: #FF6712;
-        top: calc(100% - 84px);
+        top: calc(100% - 85px);
+        
     }
     .sliderBar-button {
         display: inline-flex;
         position: sticky;
         width: 100%;
-        
     }
     .sliderBar_arrow {
         display: none;
