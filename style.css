@@ -36,7 +36,7 @@
     position: relative;
     height: 350px;
     background-color: rgb(255, 255, 255);
-    
+    margin-bottom: 100px;
 }
 .main_one_img_title {
     position: relative;
@@ -126,8 +126,8 @@
     text-align: center;
     width: 200px;
     z-index: 1;
-    margin-left: 41%;
-    margin-top: 100px;
+    margin: 0 auto;
+    justify-content: center;
 }
 .main_two_txt {
     font-family: 'Akzidenz-Grotesk Pro Extra'; 
@@ -874,6 +874,16 @@ video {
 }
 
 @media screen and (max-width: 1200px) {
+    .main_one {
+        height: 300px;        
+    }
+    .cloud_up {
+        top: 556px;
+    }
+    .cloud_down {
+        top: 1057px;
+    }
+    
     .main_one_grup {
         width: 140px;
         height: 140px;
@@ -1073,6 +1083,18 @@ video {
     }
     
 }
+@media screen and (max-width: 900px) {
+    .main_one {
+        height: 250px;        
+    }
+    .cloud_up {
+        top: 422px;
+    }
+    .cloud_down {
+        top: 869px;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
     .main_two_img, .main_two_grup {
@@ -1107,10 +1129,6 @@ video {
     
     .main_two {
         height: 650px;
-    }
-    .main_two_heading {
-        margin-top: 100px;
-        margin-left: 35%;
     }
 
     .fire-main_two {
@@ -1368,6 +1386,11 @@ video {
 }
 
 @media screen and (max-width: 550px) {
+    .main_one {
+        height: 1450px; 
+        top: -85px;  
+        margin-bottom: 0;    
+    }
     .cloud_up {
         width: 100%;
         height: 120px;
@@ -1378,12 +1401,9 @@ video {
         width: 100%;
         background-size: cover;
         height: 169px;
-        margin-top: 1483px;
+        margin-top: 1283px;
     }
-    .main_one {
-        height: 1650px; 
-        top: -85px;      
-    }
+    
     .main_one_img_title {
         display: grid;
         row-gap: 100px;
@@ -1404,15 +1424,11 @@ video {
     }
     .main_two {
         height: 1200px;
+        
     }
 
     .main_one_title {
         width: 100%;
-    }
-    
-    .main_two_heading {
-        margin-left: 15%;
-        width: 50%;
     }
     
     .main_two_grup {
@@ -1910,10 +1926,6 @@ video {
         height: 245px;
         left: -9px;
         top: 970px;
-}
-.main_two_heading {
-    margin-left: 15%;
-    width: 70%;
 }
 .feedback-form {
     width: 270px;
