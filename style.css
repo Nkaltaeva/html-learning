@@ -186,11 +186,10 @@
 
 .sky-up-four {
     position: absolute;
-    width: 100%;
+    width: 1000px;
     height: 1500px;
     right: 0;
     background-image:  url(./img/main/three_four/gren_sky_1.png);
-    background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -198,21 +197,20 @@
 .sky-center-four {
     position: absolute;
     width: 100%;
+    height: 1000px;
+    left: 0;
     background-image:  url(./img/main/three_four/gren_sky_2.png);
     background-repeat: no-repeat;
-    background-position: left 0% !important;
-    height: 1000px;
-    top: 2900px;
     z-index: 1;
 }
 .sky-down-four {
     position: absolute;
-    width: 100%;
+    width: 1000px;
     background-image:  url(./img/main/three_four/gren_sky_3.png);
     background-repeat: no-repeat;
-    background-position: bottom 100px right -20% !important;
     height: 1000px;
     top: 3500px;
+    right: 0;
     z-index: 1;
 }
 
@@ -404,12 +402,14 @@
 .main_five {
     height: 660px;
     z-index: 20;
+    margin-top: 70px;
 }
 .main_five_heading {
     position: relative;
     width: 900px;
     font-size: 52px;
-    margin: 195px 0 80px 100px;
+    justify-content: center;
+    margin: 0 auto;
     z-index: 3;
 }
 
@@ -436,8 +436,9 @@
     font-size: 22px;
     color: white;
     z-index: 2;
-    margin-left: 150px;
+    margin: 70px 0 0 200px;
     cursor: pointer;
+
 }
 .button_test:hover {
     background: #FF9900;
@@ -447,8 +448,7 @@
     background-image: url(./img/main/three_four/fireplace.png);
     height: 700px;
     width: 600px;
-    left: 650px;
-    bottom: 10px;
+    left: 580px;
     background-size: cover;
     background-position: right;
     z-index: 2;
@@ -460,7 +460,7 @@
     background-image: url(./img/cloud_down.png);
     height: 270px;
     align-items: center;
-    top: 4376px;
+    top: 4210px;
     z-index: -1;
 }
 
@@ -474,7 +474,6 @@
     width: 100%;
     background-image: url(./img/main/six/image\ 1700.png);
     background-repeat: no-repeat;
-    background-position: left 90% !important;
     height: 350px;
     top: 4600px;
     z-index: 1;
@@ -484,7 +483,6 @@
     width: 100%;
     background-image: url(./img/main/six/image\ 1701.png);
     background-repeat: no-repeat;
-    background-position: right 90% !important;
     height: 800px;
     top: 4350px;
     z-index: 1;
@@ -494,6 +492,7 @@
     position: relative;
     margin-top: 50px;
     justify-content: center;
+    margin: 0 auto;
     height: 300px;
     display: grid;
     grid-gap: 21px;
@@ -504,13 +503,14 @@
     width: 400px;
     padding: 17px;
     box-sizing: border-box;
-    margin-left: 160px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .main_six_title {
     position: relative;
-    margin-left: 180px;
-    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main_six_txt {
@@ -971,11 +971,7 @@ video {
         height: 2400px;
     }
     .cloud_down-six {
-        top: 4589px;
-    }
-    .main_six_title {
-        margin-left: 180px;
-        width: 60%;
+        top: 4411px;
     }
     .main_six_block {
         grid: repeat(2, 150px) / repeat(3, 220px);
@@ -1136,7 +1132,15 @@ video {
         top: 32px;
         left: 34px;
     }
-    
+    .cloud_down-six {
+        top: 4650px;
+    }
+    .button_test {
+        margin-top: 320px;
+    }
+    .main_six_title {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -1253,10 +1257,10 @@ video {
         z-index: 50;
     }
     .five_fireplace {
-        height: 370px;
-        width: 278px;
-        left: 270px;
-        top: 1820px;
+        height: 410px;
+        width: 343px;
+        left: 200px;
+        top: 2011px;
     }
     .sky-down-four {
         background-image:  url(./img/main/three_four/gren_sky_3.png);
@@ -1274,13 +1278,14 @@ video {
         height: 550px;
     }
     .button_test {
-        margin-left: 210px;
+        margin: 100px 0 0 150px;
     }
     .cloud_down-six {
-        top: 4200px;
+        top: 4261px;
     }
     .main_six_title {
-        margin-left:50px;
+        width: 350px;
+        margin-bottom: 20px;
     }
     .main_six_block {
         grid: repeat(2, 185px) / repeat(3, 160px);
@@ -1416,10 +1421,6 @@ video {
     .main_nine-block {
         margin-left: 20px;
     }
-    .main_six_heading {
-        width: 350px;
-        margin-left: 30px;
-    }
     .main_eight {
         height: 650px;
     }
@@ -1524,11 +1525,6 @@ video {
     .point4 {
         height: 100px;
         margin-bottom: 20px;
-    }
-    .main_six_block {
-        grid: repeat(2, 150px) / repeat(3, 160px);
-        grid-gap: 15px;
-        z-index: 10;
     }
     .six-block-point-silver, .six-block-point-orange {
         width: 160px;
@@ -1648,9 +1644,9 @@ video {
     }
 
     .button_test {
-       width: 90%;
+       width: 300px;
        height: 60px;
-       margin-left: 5%;
+       margin: 45px 0 0 20px;
        padding: 20px;
         box-sizing: border-box;
         border-radius: 40px;
@@ -1658,10 +1654,10 @@ video {
         box-shadow: 0px 6px 25px 0px #FF910299;
     }
     .five_fireplace {
-        height: 390px;
-        width: 246px;
-        left: 202px;
-        top: 2523px;
+        height: 428px;
+        width: 315px;
+        left: 112px;
+        top: 2682px;
     }
     
     .cloud_down-seven {
@@ -1673,8 +1669,7 @@ video {
         top: 7060px;
     }
     .main_six_heading {
-        width: 243px;
-        margin-left: 10px;
+        width: 300px;
     }
     .main_six_txt {
         margin-left: 15px;
@@ -1683,26 +1678,56 @@ video {
         font-size: 50px;
     }
     .main_six_title {
-        width: 243px;
-        margin: 20px 0 0 30px;
+        width: 300px;
+        
     }
     .main_six_block {
         width: 100%;
         height: 300px;
         display: block;
-        margin-left: 25px;
     }
     .main_six{
         height: 1590px;
         margin-top: 200px;
     }
     .sixPoint1 {
-        width: 95%;
+        width: 100%;
         justify-content: center;
         margin-bottom: 20px;
     }
     .cloud_down-six {
-        top: 7200px;
+        top: 6900px;
+    }
+    .six-block-point-img1 {
+        height: 134px;
+        width: 83px;
+        right: -23px;
+    }
+    .six-block-point-img2 {
+        height: 110px;
+        width: 83px;
+        right: -23px;
+    }
+    .six-block-point-img3 {
+        height: 115px;
+        width: 81px;
+        right: -23px;
+    }
+    .six-block-point-img4 {
+        height: 85px;
+        width: 84px;
+        right: -23px;
+    }
+    .six-block-point-img5 {
+        height: 80px;
+        width: 83px;
+        right: -23px;
+    }
+    
+    .six-block-point-img6 {
+        height: 77px;
+        width: 82px;
+        right: -23px;
     }
     .cloud_up-seven {
         top: 8646px
@@ -1833,14 +1858,17 @@ video {
         top: 3476px;
     }
     .five_fireplace {
-        height: 299px;
-        width: 246px;
-        left: 137px;
-        top: 2776px;
+        height: 373px;
+        width: 285px;
+        left: 109px;
+        top: 2717px;
+    }
+    .button_test {
+        width: 200px;
     }
     .six-block-point-img1, .six-block-point-img2, .six-block-point-img3, 
     .six-block-point-img4, .six-block-point-img5, .six-block-point-img6 {
-        left: 9px;
+        left: 23px;
     }
     .six-block-point-img4 {
         width: 83px;
@@ -1851,6 +1879,9 @@ video {
         height: 285px;
         left: 26px;
         top: 1042px;
+}
+.cloud_down-six {
+    top: 6883px;
 }
 }
 
@@ -1873,9 +1904,10 @@ video {
     .five_fireplace {
         height: 390px;
         width: 246px;
-        left: 42px;
+        left: 51px;
         top: 2700px;
     }
+    
     .feedback-magazine {
         width: 86%;
         height: 12%;
@@ -1937,27 +1969,36 @@ video {
     .six-block-point-img1 {
         height: 134px;
         width: 83px;
+        left: 5px; 
     }
     .six-block-point-img2 {
         height: 110px;
         width: 83px;
+        left: 5px; 
     }
     .six-block-point-img3 {
         height: 115px;
         width: 81px;
+        left: 5px; 
     }
     .six-block-point-img4 {
         height: 85px;
         width: 84px;
+        left: 5px; 
     }
     .six-block-point-img5 {
         height: 80px;
         width: 83px;
+        left: 5px; 
     }
     
     .six-block-point-img6 {
         height: 77px;
         width: 82px;
+        left: 5px; 
+    }
+    .cloud_down-six {
+        top: 6855px;
     }
 }
 
@@ -1981,11 +2022,11 @@ video {
         top: 92px;;
     }
     .five_fireplace {
-        left: 58px;
+        left: 54px;
     }
     .six-block-point-img1, .six-block-point-img2, .six-block-point-img3, 
     .six-block-point-img4, .six-block-point-img5, .six-block-point-img6 {
-        left: 0;
+        left: 5px;
     }
     .six-block-point-img4 {
         width: 83px;
@@ -2003,10 +2044,5 @@ video {
 }
 .main_eight {
     height: 528px;
-}
-.main_six_block {
-    width: 260px;
-    height: 300px;
-    display: block;
 }
 }
