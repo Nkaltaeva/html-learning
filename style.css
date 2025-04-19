@@ -448,7 +448,7 @@
     background-image: url(./img/main/three_four/fireplace.png);
     height: 700px;
     width: 600px;
-    left: 580px;
+    left: 1207px;
     background-size: cover;
     background-position: right;
     z-index: 2;
@@ -627,7 +627,8 @@
     background-image: url(./img/cloud_up.png);
     height: 260px;
     align-items: center;
-    top: 5019px;
+    top: 4852px;
+
 }
 .cloud_down-seven {
     position: absolute;
@@ -635,7 +636,7 @@
     background-image: url(./img/cloud_down.png);
     height: 260px;
     align-items: center;
-    top: 6735px;
+    top: 6642px;
 }
 
 .smoke-up-seven {
@@ -643,7 +644,6 @@
     width: 100%;
     background-image: url(./img/main/seven/image\ 1700.png);
     background-repeat: no-repeat;
-    background-position: left 90% !important;
     height: 350px;
     top: 5050px;
     z-index: 1;
@@ -672,13 +672,15 @@
     position: relative;
     cursor: pointer;
     text-align: center;
-    height: 1500px;
+    height: 1574px;
     background-color: #FFFFFF;
+    
 }
 
 video {
-    width: 70%;
+    width: 1000px;
     height: auto;
+    z-index: 10;
 }
 .video_phone {
     display: none;
@@ -687,11 +689,14 @@ video {
     position: relative;
     z-index: 100;
     cursor: pointer;
+    margin-bottom: 120px;
 }
 
 .heading-seven {
     width: 750px;
-    margin: 100px 0 0 250px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 10;
 }
 
 .main_seven_heading {
@@ -705,16 +710,20 @@ video {
     font-size: 52px;
 }
 
-
+.main_seven-feedback {
+    margin-top: 50px;
+    z-index: 10;
+}
 .feedback-block {
-    width: 700px;
+    width: 880px;
     height: 420px;
     border-radius: 20px;
-    padding: 85px 80px;
+    padding: 85px 60px;
     box-sizing: border-box;
     background-color: #151515;
     text-align: left;
-    margin: 80px 0 0 130px;
+    margin: 0 auto;
+    z-index: 10;                
 }
 
 .feedback-form {
@@ -724,6 +733,7 @@ video {
 .feedback-form-input::placeholder {
     color: #212529;
     font-size: 14px;
+    
   }
  
 
@@ -737,6 +747,7 @@ video {
     box-sizing: border-box;
     margin-bottom: 20px;
     color: #151515;
+    box-shadow: -1px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .feedback-form-submit {
@@ -754,6 +765,7 @@ video {
     color: white;
     letter-spacing: .05rem;
     cursor: pointer;
+    box-shadow: -1px 0px 8px 0px rgba(0, 0, 0, 0.2);    
 }
 .feedback-form-submit:hover {
     background: #FF9900;
@@ -768,13 +780,13 @@ video {
 
 .feedback-magazine {
     position: absolute;
-    width: 840px;
-    height: 700px;
+    width: 667px;
+    height: 559px;
     background-image: url(./img/main/seven/каталог.png);
     background-size: cover;
     z-index: 3;
-    left: 550px;
-    bottom: 20px;
+    left: 1147px;
+    top: 974px;
 }
 .main_eight {
     margin-top: 200px;
@@ -817,6 +829,12 @@ video {
     align-items: center;
     justify-content: center;
     display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: center;
+}
+.flowers:nth-child(1) {
+    margin-left: 0;
 }
 .flowers {
     position: relative;
@@ -841,7 +859,6 @@ video {
     position: relative;
     text-transform: uppercase;
     font-size: 42px;
-    width: 700px;
     font-family: 'Akzidenz-Grotesk Pro Extra'; 
     letter-spacing: .1rem;
 }
@@ -869,6 +886,42 @@ video {
 }
 .main_four_dots-navigation .crl.active, .main_four_dots-navigation .crl:hover {
 	background-color: #ffffe6;
+}
+iframe {
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 1800px) {
+    .five_fireplace {
+        left: 790px;
+    }
+    .main_seven {
+        height: 1547px;
+    }
+    .feedback-magazine {
+        left: 777px;
+        top: 1012px;
+    }
+    .cloud_down-seven {
+        top: 6619px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .five_fireplace {
+        left: 550px;
+    }
+    .main_seven {
+        height: 1547px;
+    }
+    .feedback-magazine {
+        left: 514px;
+        top: 857px;
+        z-index: 0;
+    }
+    .cloud_down-seven {
+        top: 6619px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -992,40 +1045,43 @@ video {
         font-size: 12px;
         margin-top: 5px;
     }
+    video {
+        width: 800px;
+    }
+    .vidio-player {
+        top: 0;
+    }
     .cloud_up-seven {
-        top: 5233px;
+        top: 5054px;
     }
     .heading-seven {
-        width: 80%;
-        margin-left: 10%;
+        width: 700px;
     }
     .main_seven_heading {
-        width: 80%;
-        font-size: 44px;
+        width: 640px;
+        font-size: 42px;
     }
     .feedback-magazine {
-        position: absolute;
-        width: 440px;
-        height: 360px;
-        top: 750px;
-        left: 400px;
+        width: 500px;
+        height: 410px;
         z-index: 0;
+        left: 440px;
+        top: 808px;
     }
     .feedback-block {
-        width: 90%;
+        width: 600px;
         height: 420px;
         border-radius: 20px;
-        padding: 85px 80px;
+        padding: 85px 40px;
         box-sizing: border-box;
         background-color: #151515;
         text-align: left;
-        margin: 80px 0 0 5%;
     }
     .main_seven {
-        height: 1250px;
+        height: 1309px;
     }
     .cloud_down-seven {
-        top: 6700px;
+        top: 6580px;
     }
     .main_eight {
         height: 950px;
@@ -1062,12 +1118,7 @@ video {
         top: -50px;
     }
     
-    .main_eight-flowers {
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
+   
     .flowers {
         position: relative;
         width: 250px;
@@ -1141,8 +1192,72 @@ video {
     .main_six_title {
         margin-bottom: 20px;
     }
+    .cloud_up-seven {
+        top: 5293px;
+    }
+    .main_six {
+        height: 772px;
+    }
+    .heading-seven {
+        width: 500px;
+    }
+    .main_seven_heading {
+        width: 450px;
+        font-size: 34px;
+    }
+    .vidio-player {
+        top: -80px;
+        margin-bottom: 0;
+    }
+    video {
+        width: 100%;
+    }
+    .feedback-magazine {
+        width: 500px;
+        height: 410px;
+        z-index: 0;
+        left: 350px;
+        top: 519px;
+    }
+    .main_seven {
+        height: 1033px;
+    }
+    .cloud_down-seven {
+        top: 6526px;
+    }
+    .heading-eight {
+        width: 400px;
+    }
+    .main_eight_heading {
+        width: 350px;
+    }
+    .giftbox {
+        left: 220px;
+        top: -12px;
+    }
+    .flowers {
+        width: 174px;
+        margin-left: -39px;
+    }
+    .main_nine-title {
+        margin: 10px;
+    }
 }
-
+@media screen and (max-width: 820px) {
+    .feedback-magazine {
+        width: 463px;
+        height: 377px;
+        z-index: 0;
+        left: 350px;
+        top: 529px;
+    }
+    .main_seven {
+        height: 990px;
+    }
+    .cloud_down-seven {
+        top: 6481px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .main_two_img, .main_two_grup {
@@ -1343,11 +1458,15 @@ video {
         height: 750px;
     }
     .cloud_up-seven {
-        top: 4802px;
+        top: 4872px;
     }
     
     .cloud_down-seven {
-        top: 6090px;
+        top: 5980px;
+    }
+    .vidio-player {
+        top: -80px;
+        margin-bottom: 0;
     }
     video {
         width: 90%;
@@ -1358,18 +1477,16 @@ video {
         top: 4500px;
     }
     .heading-seven {
-        width: 80%;
-        margin: 100px 0 0 50px;
+        width: 500px;
     }
     .main_seven_heading {
-        width: 80%;
-        font-size: 36px;
+        width: 450px;
+        font-size: 34px;
     }
  
     .feedback-block {
-        padding: 30px 30px;
-        margin-left: 5%;
-        width: 90%;
+        padding: 30px 20px;
+        width: 470px;
         height: 320px;
     }
     
@@ -1378,16 +1495,17 @@ video {
         position: relative;
     }
     .feedback-magazine {
-        width: 351px;
-        height: 285px;
-        left: 354px;
-        top: 724px;
+        width: 437px;
+        height: 352px;
+        z-index: 0;
+        left: 272px;
+        top: 456px;
     }
     .smoke-down-seven {
         top: 5380px;
     }
     .main_seven {
-        height: 1070px;
+        height: 900px;
     }
     .heading-eight {
         width: 350px;
@@ -1403,12 +1521,10 @@ video {
         left: 235px;
         top: -20px;
     }
-    .main_eight-flowers {
-        margin-left: 50px;
-    }
+    
     .flowers {
-        width: 220px;
-        margin-left: -56px;
+        width: 169px;
+        margin-left: -38px;
     }
     .main_nine-title {
         width: 280px;
@@ -1416,7 +1532,7 @@ video {
         padding: 40px 20px;
     }
     .main_nine-heading {
-        font-size: 32px;
+        font-size: 28px;
     }
     .main_nine-block {
         margin-left: 20px;
@@ -1425,7 +1541,25 @@ video {
         height: 650px;
     }
 }
+@media screen and (max-width: 700px) {
+    .feedback-magazine {
+        width: 384px;
+        height: 325px;
+        z-index: 0;
+        left: 200px;
+        top: 479px;
+    }
+}
 
+@media screen and (max-width: 585px) {
+    .feedback-magazine {
+        width: 313px;
+        height: 256px;
+        z-index: 0;
+        left: 251px;
+        top: 514px;
+    }
+}
 @media screen and (max-width: 550px) {
     .main_one {
         height: 1450px; 
@@ -1668,6 +1802,7 @@ video {
         align-items: center;
         top: 7060px;
     }
+    
     .main_six_heading {
         width: 300px;
     }
@@ -1687,7 +1822,7 @@ video {
         display: block;
     }
     .main_six{
-        height: 1590px;
+        height: 1550px;
         margin-top: 200px;
     }
     .sixPoint1 {
@@ -1730,7 +1865,7 @@ video {
         right: -23px;
     }
     .cloud_up-seven {
-        top: 8646px
+        top: 8307px
     }
     .smoke-up-seven {
         background-image: url(./img/main/seven/image\ 1700.png);
@@ -1753,8 +1888,11 @@ video {
         border-radius: 20px;
     }
     .heading-seven {
-        width: 90%;
-        margin-left: 5%;
+        width: 350px;
+    }
+    .main_seven_heading {
+        width: 300px;
+        font-size: 42px;
     }
     .smoke-center-seven {
         top: 4500px;
@@ -1765,8 +1903,8 @@ video {
     .feedback-magazine {
         width: 351px;
         height: 285px;
-        left: 67px;
-        top: 1100px;
+        left: 93px;
+        top: 931px;
     }
     .smoke-down-seven {
         background-image: url(./img/main/seven/image\ 1711.png);
@@ -1777,13 +1915,12 @@ video {
         top: 5650px;
     }
     .main_seven {
-        height: 1750px;
+        height: 1637px;
     }
     .feedback-block {
-        width: 90%;
+        width: 300px;
         height: auto;
-        margin-top: 280px;
-        margin-left: 5%;
+        margin-top: 290px;
         padding: 45px 20px;
         
     }
@@ -1793,12 +1930,12 @@ video {
     }
     
     .feedback-form-input {
-        width: 230px;
+        width: 260px;
         height: 50px;
     }
     
     .feedback-form-submit {
-        width: 230px;
+        width: 260px;
         height: 50px;
         padding: 10px;
         font-size: 14px;
@@ -1812,7 +1949,7 @@ video {
         background-image: url(./img/cloud_down.png);
         height: 260px;
         background-size: cover;
-        top: 10615px
+        top: 10127px;
     }
     .heading-eight {
         position: relative;
@@ -1833,9 +1970,6 @@ video {
     .main_eight {
         height: 650px;
     }
-    .main_eight-flowers {
-        margin-left: 20px;
-    }
     .flowers {
         width: 125px;
         height: auto;
@@ -1847,6 +1981,15 @@ video {
     }
     .main_nine-heading {
         font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .feedback-magazine {
+        width: 351px;
+        height: 285px;
+        left: 67px;
+        top: 923px;
     }
 }
 
@@ -1878,11 +2021,14 @@ video {
         width: 351px;
         height: 285px;
         left: 26px;
-        top: 1042px;
-}
-.cloud_down-six {
-    top: 6883px;
-}
+        top: 900px;
+    }
+    .cloud_down-six {
+        top: 6883px;
+    }
+    .main_seven-feedback {
+        margin-top: -35px;
+    }
 }
 
 @media screen and (max-width: 388px) {
@@ -1909,10 +2055,10 @@ video {
     }
     
     .feedback-magazine {
-        width: 86%;
-        height: 12%;
-        top: 990px;
-        left: 5%;
+        width: 325px;
+        height: 268px;
+        left: 26px;
+        top: 602px;
     }
     .main_five_heading {
         position: relative;
@@ -1923,12 +2069,12 @@ video {
         z-index: 3;
     }
     .feedback-form-input {
-        width: 220px;
+        width: 260px;
         height: 50px;
     }
     
     .feedback-form-submit {
-        width: 220px;
+        width: 260px;
         height: 50px;
         padding: 10px;
         font-size: 14px;
@@ -1946,13 +2092,10 @@ video {
         font-size: 34px;
     }
     .giftbox {
-        left: 130px;
+        left: 113px;
     }
     .main_eight {
         height: 650px;
-    }
-    .main_eight-flowers {
-        margin-left: 20px;
     }
     .flowers {
         width: 90px;
@@ -2000,6 +2143,26 @@ video {
     .cloud_down-six {
         top: 6855px;
     }
+    .main_six {
+        height: 1592px;
+    }
+    .vidio-player {
+        top: -200px;
+        margin-bottom: -130px;
+    }
+    .heading-seven {
+        width: 280px;
+    }
+    .main_seven_heading {
+        width: 220px;
+        font-size: 32px;
+    }
+    .main_seven {
+        height: 1310px;
+    }
+    .cloud_down-seven {
+        top: 9827px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -2018,9 +2181,10 @@ video {
     .giftbox {
         width: 150px;
         height: 150px;
-        left: 133px;
+        left: 124px;
         top: 92px;;
     }
+    
     .five_fireplace {
         left: 54px;
     }
@@ -2033,16 +2197,24 @@ video {
         height: 83px;
     }
     .feedback-magazine {
-        width: 312px;
-        height: 245px;
-        left: -9px;
-        top: 970px;
-}
-.feedback-form {
-    width: 270px;
-    position: relative;
-}
-.main_eight {
-    height: 528px;
-}
+        width: 298px;
+        height: 234px;
+        left: 9px;
+        top: 615px;
+    }
+    .feedback-form {
+        width: 270px;
+        position: relative;
+    }
+    .main_eight {
+        height: 528px;
+    }
+    .main_six {
+        height: 1550px;
+        margin-top: 200px;
+    }
+    .cloud_down-seven {
+        top: 9811px;
+    }
+    
 }

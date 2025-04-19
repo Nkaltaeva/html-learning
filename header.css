@@ -214,6 +214,11 @@ a {
     background: #FF6712;
     color: #151515;
 }
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 1150px;
+    }
+}
 
 
 @media screen and (max-width: 1200px) { 

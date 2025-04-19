@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Akzidenz-Grotesk Pro';
-  src: local("Akzidenz-Grotesk Pro"), url("../fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+  src: local("Akzidenz-Grotesk Pro"), url("../../fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: 'Akzidenz-Grotesk Pro Extra';
-  src: local("Akzidenz-Grotesk Pro Extra"), url("../fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
+  src: local("Akzidenz-Grotesk Pro Extra"), url("../../fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
   font-display: swap;
 }
 .carousel-block {
@@ -160,10 +160,13 @@
 .carousel_dots:hover {
     color: #FF6712;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .carousel-window {
-    width: 100%;
+    width: 900px;
     height: 210px;
+    
+    margin: 0 auto;
+    justify-content: center;
   }
   .carousel-watch {
     height: 210px;
@@ -192,27 +195,27 @@
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .carousel-block {
     margin-top: 50px;
 }
   .carousel-window {
-    width: 100%;
+    width: 700px;
     height: 400px;
 
   }
   .carousel-watch-photo {
     height: 400px;
-    width: 100%;
+    width: 700px;
   }
   .carousel-watch {
     height: 400px;
-    width: 100%;
+    width: 700px;
   }
   
   .item {
     height: 400px;
-    width: 100%;
+    width: 700px;
   }
   .carousel-window::before, .carousel-window::after {
     display: none;
@@ -231,27 +234,45 @@
 }
 @media screen and (max-width: 800px) {
   .carousel-block_heading {
-    width: 400px;
-}
+    width: 450px;
+  }
+  .carousel-window {
+    width: 450px;
+    height: 250px;
+
+  }
+  .carousel-watch-photo {
+    height: 250px;
+    width: 450px;
+  }
+  .carousel-watch {
+    height: 250px;
+    width: 450px;
+  }
+
+  .item {
+    height: 250px;
+    width: 450px;
+  }
 }
 @media screen and (max-width: 550px) {
   .carousel-window {
-    width: 100%;
+    width: 400px;
     height: 200px;
 
   }
   .carousel-watch-photo {
     height: 200px;
-    width: 100%;
+    width: 400px;
   }
   .carousel-watch {
     height: 200px;
-    width: 100%;
+    width: 400px;
   }
   
   .item {
     height: 200px;
-    width: 100%;
+    width: 400px;
   }
   .carousel-arrow {
     top: 223px;
@@ -261,6 +282,26 @@
   .carousel-block_heading {
     width: 290px;
 }
+}
+@media screen and (max-width: 380px)  {
+  .carousel-window {
+    width: 250px;
+    height: 170px;
+
+  }
+  .carousel-watch-photo {
+    height: 170px;
+    width: 250px;
+  }
+  .carousel-watch {
+    height: 170px;
+    width: 250px;
+  }
+  
+  .item {
+    height: 170px;
+    width: 250px;
+  }
 }
 
 
