@@ -27,7 +27,7 @@ function initCarousel(carouselRootNode) {
 
   // тоже самое, что для 1.
   const GAP = 20;
-  const shift = slideWidth + GAP;
+  let shift = slideWidth + GAP;
   let leftSlideIndex = 0;
 
   // тоже самое, что для 1.
@@ -60,6 +60,18 @@ function initCarousel(carouselRootNode) {
   });
   carouselArrowButton.right.addEventListener("click", () => {
     moveSlide("carousel-arrow-right");
+  });
+  window.addEventListener("resize", (event) => {
+    // 1. это можно задавать вручную или брать из ноды, как у меня - как лучше делать зависит от задачи, проще писать вручную, но от этого меньше гибкости
+    const slideWidth = carouselRootNode
+      .querySelector(".carousel .carousel-watch-photo")
+      .getBoundingClientRect().width;
+    shift = slideWidth + GAP;
+
+    console.log({ shift });
+    carouselTrackNode.style = `transform: translateX(${
+      -leftSlideIndex * shift
+    }px)`;
   });
 }
 

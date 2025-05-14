@@ -9,7 +9,7 @@
   font-display: swap;
 }
 .carousel-block {
-    margin-top: 100px;
+  padding: 50px 0 100px 0;
 }
 
 .carousel-block_heading {
@@ -18,6 +18,7 @@
     margin: 0 auto;
     justify-content: center;
     z-index: 5;
+    padding-bottom: 50px;
 }
 
 .carousel-block_txt {
@@ -33,10 +34,10 @@
 
 .carousel-watch {
   position: relative;
-  width: 100%; 
+  width: 1198px; 
   height: 285px;
   z-index: 6;
-  margin-top: 80px;
+  margin: 0 auto;
 }
 
 .carousel-window {
@@ -88,8 +89,8 @@
 
 .item {
     scroll-snap-align: start;
-    width: 420px;
-    height: 285px;
+    width: 386px;
+    height: 265px;
     border-radius: 20px;
   }
 
@@ -106,7 +107,7 @@
   top: 110px;
   justify-content: center;
   display: flex;
-  gap: 400px;
+  gap: 370px;
 
 }
 .carousel-arrow-left, .carousel-arrow-right {
@@ -170,7 +171,7 @@
   }
   .carousel-watch {
     height: 210px;
-    margin-bottom: 132px;
+    width: 900px;
   }
   .carousel-window::before {
     height: 210px;
@@ -196,9 +197,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .carousel-block {
-    margin-top: 50px;
-}
   .carousel-window {
     width: 700px;
     height: 400px;
@@ -236,6 +234,9 @@
   .carousel-block_heading {
     width: 450px;
   }
+   .carousel-block_txt {
+    font-size: 48px;
+}
   .carousel-window {
     width: 450px;
     height: 250px;
@@ -256,52 +257,44 @@
   }
 }
 @media screen and (max-width: 550px) {
+   .carousel-block_heading {
+    width: 300px;
+  }
+   .carousel-block_txt {
+    font-size: 36px;
+}
   .carousel-window {
-    width: 400px;
+    width: 100%;
     height: 200px;
 
   }
   .carousel-watch-photo {
     height: 200px;
-    width: 400px;
+    width: 100%;
   }
   .carousel-watch {
     height: 200px;
-    width: 400px;
+    width: 100%;
   }
   
   .item {
     height: 200px;
-    width: 400px;
+    width: 100%;
   }
   .carousel-arrow {
     top: 223px;
     display: flex;
     gap: 150px;
   }
-  .carousel-block_heading {
-    width: 290px;
-}
 }
 @media screen and (max-width: 380px)  {
-  .carousel-window {
-    width: 250px;
-    height: 170px;
+  .carousel-block_heading {
+    width: 200px;
+  }
+  .carousel-block_txt {
+    font-size: 32px;
+}
 
-  }
-  .carousel-watch-photo {
-    height: 170px;
-    width: 250px;
-  }
-  .carousel-watch {
-    height: 170px;
-    width: 250px;
-  }
-  
-  .item {
-    height: 170px;
-    width: 250px;
-  }
 }
 
 

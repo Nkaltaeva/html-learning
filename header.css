@@ -25,10 +25,11 @@ a {
 }
 .wrapper {
     width: 100%;
+    
 }
 
 .container {
-    width: 1300px;
+    padding: 0 30px ;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,8 +44,8 @@ a {
     background-image: url(./img/header/комплекс.png);
     background-size: contain;
     background-repeat: no-repeat;
-    right: 0;
     height: 800px;
+    right: 0;
 }
 .piople-header {
     position: absolute;
@@ -68,15 +69,16 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 70px;
+    padding: 20px 0 40px 0;
+    box-sizing: border-box;
 }
 
 .nav_logo_header {
     position: relative;
     width: 180px;
     height: auto;
-    margin-top: 20px;
     cursor: pointer;
 }
 .nav_ul_group_header {
@@ -85,7 +87,6 @@ a {
     gap: 30px;
     list-style: none;
     font-size: 14px;
-    margin-top: 20px;
 }
 .menu_block .menu-btn {
     display: none;
@@ -105,7 +106,6 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    margin-top: 10px;
     text-shadow: #000000 1px 0 7px;
 }
 .nav_network_header {
@@ -133,6 +133,7 @@ a {
     display: flex;
     position: relative;
     justify-content: space-between;
+    z-index: 10;
 }
 .square_line-1 span {
     width: 29px;
@@ -158,9 +159,12 @@ a {
     border-left: 4px solid orange;
 }
 
+.banner_block {
+    width: 1100px;
+    margin: 0 auto;
+}
 .banner_header {
     width: 490px;
-    margin-top: 50px;
 }
 
 .banner_text_heading {
@@ -177,9 +181,10 @@ a {
 .banner_text_title{
     position: relative;
     font-family: 'Akzidenz-Grotesk Pro Extra';
-    margin: 8px 0 20px 0;
     font-size: 28px;
-    width: 650px;
+    
+    padding: 40px 0;
+    
 }
 
 .banner_icon-text {
@@ -214,21 +219,22 @@ a {
     background: #FF6712;
     color: #151515;
 }
-@media screen and (max-width: 1350px) {
-    .container {
-        width: 1150px;
-    }
-}
+
 
 
 @media screen and (max-width: 1200px) { 
-    .container {
-        width: 900px;
+    .nav_header {
+        justify-content: space-between;
     }
+    .banner_block {
+        width: auto;
+    justify-content: space-between;
+}
+
     .nav_header {
         gap: 20px;
         align-items: center;
-        margin-bottom: 40px;
+
     }
     .fire-header {
         width: 500px;
@@ -241,26 +247,27 @@ a {
     .nav_ul_group_header {
         gap: 15px;
         font-size: 12px;
-        margin-top: 8px;
+    }
+    
+    .nav_contact_phone:hover, .nav_network_header:hover {
+        filter: drop-shadow(1px 1px 0 #040404)
+                drop-shadow(0 0 5px #FF6712);
+    }
+
+}
+@media screen and (max-width: 1000px) { 
+    
+    .nav_title_header, .nav_title_header_dot, .nav_phone_header {
+        display: none;
     }
     .nav_img_header {
         display: flex;
         gap: 10px;
         align-items: center;
     }
-    .nav_contact_phone:hover, .nav_network_header:hover {
-        filter: drop-shadow(1px 1px 0 #040404)
-                drop-shadow(0 0 5px #FF6712);
-    }
-    .nav_title_header, .nav_title_header_dot, .nav_phone_header {
-        display: none;
-    }
 }
-
 @media screen and (max-width: 900px) { 
-    .container  {
-        width: 580px;
-    }
+
     .fireplace-header {
         width: 550px;
         height: 600px;
@@ -270,11 +277,9 @@ a {
         height: 350px;
     }
     .piople-header {
-        width: 580px;
+        width: 100%;
         height: 500px;
     }
-
-
 
     .background-header {
         height: 660px;
@@ -292,16 +297,15 @@ a {
     
     .banner_header {
         width: 360px;
-        margin-top: 40px;
     }
     .banner_text_heading {
         width: 390px;
         font-size: 36px;
     }
     .banner_text_title{
-        margin-top: 30px;
         font-size: 16px;
-        width: 100%;
+         margin: 0 auto;
+         padding: 0;
     }
     .banner_icon-text {
         font-size: 12px;
@@ -309,7 +313,6 @@ a {
     }
     .button_price {
         padding: 16px 30px;
-        margin-top: 20px;
         font-size: 18px;
     }
     .menu_block {
@@ -406,18 +409,15 @@ a {
     }
 }
 @media screen and (max-width: 550px) {
-    .container {
-        width: 390px;
-    }
+
     .piople-header {
         width: 100%;
         height: 500px;
     }
     .fireplace-header {
-        width: 350px;
+        width: 400px;
         height: 600px;
         top: 400px;
-        right: 0;
     }
     .fire-header {
         display: none;
@@ -427,16 +427,17 @@ a {
         height: 778px;
     }
     .banner_header {
-        width: 270px;
+        width: 280px;
         margin: 0 auto;
     }    
     .banner_text_heading {
-        width: 270px;
-        font-size: 42px;
+        width: 280px;
+        font-size: 40px;
     }
     .banner_text_title{
-        margin: 60px 0 320px 0;
+        margin: 0 auto;
         text-align: center;
+        padding: 40px 0 290px 0;
     }
     .banner_icon-text {
         width: 100%;
@@ -444,8 +445,20 @@ a {
         font-size: 18px;
     }
 }
- @media screen and (max-width: 380px) {
-    .container {
-        width: 280px;
+@media screen and (max-width: 380px) {
+    .banner_header {
+        width: 200px;
+    } 
+    .banner_text_heading {
+        width: 200px;
+        font-size: 30px;
+    }
+    .fireplace-header {
+        width: 300px;
+        height: 600px;
+        top: 400px;
+    }
+        .banner_text_title {
+        padding: 40px 0 330px 0;
     }
 }

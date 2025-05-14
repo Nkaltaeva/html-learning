@@ -1,11 +1,16 @@
 // slider
+const closeBtnNav = document.getElementById("closeBtnNav");
+closeBtnNav.addEventListener("click", closeNav);
+
+const openBtnNav = document.getElementById("openBtnNav");
+openBtnNav.addEventListener("click", openNav);
 
 function openNav() {
-  document.getElementById("bigSliderBar-content").style.display = "block";
-  document.getElementById("smallSliderBar-content").style.display = "none";
+  document.getElementById("bigCloseBtnNav").style.display = "block";
+  document.getElementById("openBtnNav").style.display = "none";
 }
 
 function closeNav() {
-  document.getElementById("bigSliderBar-content").style.display = "none";
-  document.getElementById("smallSliderBar-content").style.display = "block";
+  document.getElementById("bigCloseBtnNav").style.display = "none";
+  document.getElementById("openBtnNav").style.display = "block";
 }
