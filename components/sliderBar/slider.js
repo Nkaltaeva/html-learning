@@ -9,7 +9,6 @@ function openNav() {
   document.getElementById("bigCloseBtnNav").style.display = "block";
   document.getElementById("openBtnNav").style.display = "none";
 }
-
 function closeNav() {
   document.getElementById("bigCloseBtnNav").style.display = "none";
   document.getElementById("openBtnNav").style.display = "block";

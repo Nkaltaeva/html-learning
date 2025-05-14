@@ -86,7 +86,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .item {
     scroll-snap-align: start;
     width: 386px;

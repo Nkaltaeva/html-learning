@@ -74,7 +74,6 @@ function initCarousel(carouselRootNode) {
     }px)`;
   });
 }
-
 const carouselNode = safetyGetNode(document, ".carousel-watch");
 
 initCarousel(carouselNode);
