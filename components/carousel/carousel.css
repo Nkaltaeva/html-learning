@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Akzidenz-Grotesk Pro';
-  src: local("Akzidenz-Grotesk Pro"), url("../fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
+  src: local("Akzidenz-Grotesk Pro"), url("../../fonts/akzidenzgroteskpro_regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: 'Akzidenz-Grotesk Pro Extra';
-  src: local("Akzidenz-Grotesk Pro Extra"), url("../fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
+  src: local("Akzidenz-Grotesk Pro Extra"), url("../../fonts/akzidenzgroteskpro_cn.ttf") format("truetype");
   font-display: swap;
 }
 .carousel-block {
@@ -15,9 +15,8 @@
 .carousel-block_heading {
     position: relative;
     width: 620px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-left: 350px;
+    margin: 0 auto;
+    justify-content: center;
     z-index: 5;
 }
 
@@ -35,7 +34,7 @@
 .carousel-watch {
   position: relative;
   width: 100%; 
- height: 285px;
+  height: 285px;
   z-index: 6;
   margin-top: 80px;
 }
@@ -97,9 +96,8 @@
 .carousel-arrow {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .carousel-arrow{
@@ -162,75 +160,69 @@
 .carousel_dots:hover {
     color: #FF6712;
 }
-@media screen and (max-width:768px) {
-  .carousel-block_heading {
-    margin-left: 50px;
-  }
+@media screen and (max-width: 1300px) {
   .carousel-window {
-    width: 100%;
-    height: 160px;
+    width: 900px;
+    height: 210px;
+    
+    margin: 0 auto;
+    justify-content: center;
   }
   .carousel-watch {
-    height: 160px;
+    height: 210px;
     margin-bottom: 132px;
   }
   .carousel-window::before {
-    height: 160px;
+    height: 210px;
   }
   .carousel-window::after {
-    height: 160px;
+    height: 210px;
   }
 
   .carousel-watch-photo {
-    height: 160px;
+    height: 210px;
   }
-    .item {
-      width: 230px;
-      height: 160px;
+  .item {
+    width: 294px;
+    height: 210px;
   }
   .carousel-arrow {
-    top: 180px;
-    gap: 300px;
+    top: calc(100% - 130px);
+    gap: 270px;
   }
   .carousel_dots_navigation {
     margin-top: 15px;
 }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1200px) {
   .carousel-block {
     margin-top: 50px;
 }
-  .carousel-block_heading {
-    width: 300px;
-    margin-left: 0px;
-  }
   .carousel-window {
-    width: 300px;
-    height: 180px;
+    width: 700px;
+    height: 400px;
 
   }
   .carousel-watch-photo {
-    height: 180px;
-    width: 300px;
+    height: 400px;
+    width: 700px;
   }
   .carousel-watch {
-    height: 180px;
-    width: 300px;
+    height: 400px;
+    width: 700px;
   }
   
   .item {
-    height: 180px;
-    width: 300px;
+    height: 400px;
+    width: 700px;
   }
   .carousel-window::before, .carousel-window::after {
     display: none;
   }
   
   .carousel-arrow {
-    justify-content: left;
-    top: 205px;
-    width: 300px;
+    top: calc(100% - -25px);
     display: flex;
     gap: 200px;
   }
@@ -239,6 +231,77 @@
     font-size: 25px;
     margin-top: 32px;
 }
+}
+@media screen and (max-width: 800px) {
+  .carousel-block_heading {
+    width: 450px;
+  }
+  .carousel-window {
+    width: 450px;
+    height: 250px;
+
+  }
+  .carousel-watch-photo {
+    height: 250px;
+    width: 450px;
+  }
+  .carousel-watch {
+    height: 250px;
+    width: 450px;
+  }
+
+  .item {
+    height: 250px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel-window {
+    width: 400px;
+    height: 200px;
+
+  }
+  .carousel-watch-photo {
+    height: 200px;
+    width: 400px;
+  }
+  .carousel-watch {
+    height: 200px;
+    width: 400px;
+  }
+  
+  .item {
+    height: 200px;
+    width: 400px;
+  }
+  .carousel-arrow {
+    top: 223px;
+    display: flex;
+    gap: 150px;
+  }
+  .carousel-block_heading {
+    width: 290px;
+}
+}
+@media screen and (max-width: 380px)  {
+  .carousel-window {
+    width: 250px;
+    height: 170px;
+
+  }
+  .carousel-watch-photo {
+    height: 170px;
+    width: 250px;
+  }
+  .carousel-watch {
+    height: 170px;
+    width: 250px;
+  }
+  
+  .item {
+    height: 170px;
+    width: 250px;
+  }
 }
 
 
