@@ -16,11 +16,10 @@
 
 footer {
     display: flex;
-    margin: 50px 0;
-    box-sizing: border-box;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 55px;
+    height: 200px;
 }
 
 .footer-logo-txt {
@@ -170,16 +169,18 @@ element.style {
         font-size: 20px;
     }
 }
-
 @media screen and (max-width: 550px) {
     footer {
         display: block;
         text-align: center;
+        padding: 20px 0 90px 0;
     }
     .footer-logo {
         margin-bottom: 20px;
     }
     .footer-logo-img {
+        padding-top: 20px;
+        box-sizing: border-box;
         width: 200px;
         height: auto;
     }
@@ -208,7 +209,6 @@ element.style {
     footer {
         display: block;
         text-align: center;
-        width: 300px;
     }
     .footer-logo {
         margin-bottom: 20px;

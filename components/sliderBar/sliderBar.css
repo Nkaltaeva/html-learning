@@ -21,6 +21,8 @@
    right: 0;
    top: 60px;
    z-index: 1000;
+   flex-direction: column;
+   margin: 0;
 }
 
 .sliderBar-button-open {
@@ -31,35 +33,35 @@
     display: none;
 }
 
-
-.sliderBar_grup {
+.sliderBar_grup{
     position: relative;
+    border: none;
+    background-color: #FF6712;
+    transition: .5s;
     justify-content: center;
     width: 100px;
     height: 80px;
-    margin-top: 5px;
-    border-radius: 10px 0 0 10px;
-    padding: 10px 5px;
-    background-color: #FF6712;
-    list-style: none;
-    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
     text-align: center;
-    cursor: pointer;
-    transition: .5s;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
 }
+
 .sliderBar_grup-open {
     position: relative;
-    justify-content: center;
     width: 50px;
     height: 50px;
     margin-top: 5px;
     border-radius: 10px 0 0 10px;
+    border: none;
     padding: 10px 5px;
     background-color: #FF6712;
-    list-style: none;
     box-sizing: border-box;
-    text-align: center;
-    cursor: pointer;
     transition: .5s;
 }
 
@@ -93,18 +95,13 @@
 .sliderBar_arrow {
     position: relative;
     z-index: 1000;
-    margin: 10px 0 0 35px;
+    margin: 0 30px;
     border-radius: 10px;
-    padding: 8px 0 0 3px;
-    background-color: #FF6712;
-    list-style: none;
+    padding: 10px 12px;
     box-sizing: border-box;
-    text-align: center;
-    font-weight: 900;
-    font-size: 18px;
+    background-color: #FF6712;
     width: 40px;
     height: 40px; 
-    cursor: pointer;
     transition: .5s;  
 }
 .sliderBar_right-menu {
@@ -133,17 +130,7 @@
     margin-top: 3px;
 }
 
-.fixed {
-    position: relative;
-    margin-top: 4px;
-    width: 10px;
-    height: auto;
-}
-.fixed-open {
-    width: 20px;
-    height: 18px;
-    padding: 6px;
-}
+
 
 @media screen and (max-width: 800px) {
     .sliderBar-button {
@@ -157,11 +144,12 @@
 @media screen and (max-width: 550px)  {
     .sliderBar {
         background-color: #FF6712;
-        top: calc(100% - 85px);
+        top: calc(100% - 80px);
         
     }
     .sliderBar-button {
         display: inline-flex;
+        flex-direction: row;
         position: sticky;
         width: 100%;
     }
@@ -179,4 +167,5 @@
         background-color: #FF6712;
         width: 25%;   
 }
+
 }
