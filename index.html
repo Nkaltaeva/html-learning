@@ -145,7 +145,7 @@
                     <img class="sliderBar_icon-open up" src="./components/sliderBar/icon/arrow_up.png" alt="icon">
                 </button><br/>
                 <button class="sliderBar_grup-open">
-                    <img onclick="openNav()"  class="sliderBar_icon-open" src="./components/sliderBar/icon/close.png"  alt="icon">
+                    <img   class="sliderBar_icon-open" src="./components/sliderBar/icon/close.png"  alt="icon">
                 </button>
             </div>
         </div>
@@ -489,10 +489,10 @@
                     </div>
                     <div class="main_seven-feedback">
                         
-                        <div class="feedback-block">
+                        <div class="feedback-block" >
                             <form  class="feedback-form" action="getform.php" method="get">
                                 <input class="feedback-form-input" type="text" placeholder="Имя" /><br />
-                                <input class="feedback-form-input" type="text" placeholder="Номер телефона WhatsApp" /><br />
+                                <input class="feedback-form-input" id="phone" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона WhatsApp" /><br />
                                 <input class="feedback-form-submit" type="submit" value="прислать примеры комплексов" />
                                 <p class="feedback-block-title">Нажимая кнопку “Прислать примеры комплексов”, Вы автоматически соглашаетесь с Политикой конфиденциальности и обработкой данных</p>
                             </form>

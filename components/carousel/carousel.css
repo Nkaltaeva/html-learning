@@ -279,6 +279,7 @@
   .item {
     height: 200px;
     width: 100%;
+    object-fit: contain;
   }
   .carousel-arrow {
     top: 223px;

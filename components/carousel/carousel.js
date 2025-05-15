@@ -68,7 +68,6 @@ function initCarousel(carouselRootNode) {
       .getBoundingClientRect().width;
     shift = slideWidth + GAP;
 
-    console.log({ shift });
     carouselTrackNode.style = `transform: translateX(${
       -leftSlideIndex * shift
     }px)`;
