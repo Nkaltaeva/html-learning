@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="./components/sliderBar/sliderBar.css">
     <link rel="stylesheet" href="./components/carousel/carousel.css">
+    <link rel="stylesheet" href="./components/callMeForm/callMe.css">
     <title>ЛЮКСБЕТОН</title>
     <meta name="description" content="ЛЮКСБЕТОН - Модульный барбекю комплекс">
 </head>
@@ -487,16 +488,26 @@
                         </div>
                         <div class="feedback-magazine"></div>
                     </div>
-                    <div class="main_seven-feedback">
+                    <div class="main_seven-feedback ">
+                        
                         
                         <div class="feedback-block" >
-                            <form  class="feedback-form" action="getform.php" method="get">
+                            <form  class="feedback-form" id="myform" method="get">
                                 <input class="feedback-form-input" type="text" placeholder="Имя" /><br />
-                                <input class="feedback-form-input" id="phone" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефона WhatsApp" /><br />
-                                <input class="feedback-form-submit" type="submit" value="прислать примеры комплексов" />
-                                <p class="feedback-block-title">Нажимая кнопку “Прислать примеры комплексов”, Вы автоматически соглашаетесь с Политикой конфиденциальности и обработкой данных</p>
+                                <input 
+                                    class="feedback-form-input feedback-phone-input" 
+                                    type="text" 
+                                    maxlength="12" 
+                                    placeholder="Номер телефона WhatsApp +71234567890"/><br />
+                                <div id="phone_error" class="error hidden">введите требуемый формат</div>
+                                           
+                                <button class="feedback-form-submit" type="submit">прислать примеры комплексов</button>
+
+                                
+                                <p class="feedback-block-title">Нажимая кнопку “Прислать примеры комплексов”, 
+                                    Вы автоматически соглашаетесь с Политикой конфиденциальности и обработкой данных</p>
                             </form>
-                            
+                                                            
                         </div>
                     </div>
                 </div>
