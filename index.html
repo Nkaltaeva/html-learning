@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="./components/sliderBar/sliderBar.css">
     <link rel="stylesheet" href="./components/carousel/carousel.css">
+    <link rel="stylesheet" href="./components/callMeForm/callMe.css">
     <title>ЛЮКСБЕТОН</title>
     <meta name="description" content="ЛЮКСБЕТОН - Модульный барбекю комплекс">
 </head>
@@ -60,7 +61,7 @@
                         </a>
                     </div>
                 </nav>
-                <section class="container">
+                <section class="banner_block">
                     <div class="banner_header">
                         <div class="square_line-1">
                             <span></span>
@@ -109,55 +110,51 @@
         
         <div id="sliderBar" class="sliderBar ">
             <!-- big Slider Bar -->
-            <div id="bigSliderBar-content" class="sliderBar-button">
-                <div class="sliderBar_grup"><buttom >
+            <div id="bigCloseBtnNav" class="sliderBar-button">
+                <buttom class="sliderBar_grup">
                     <img class="sliderBar_icon" src="./components/sliderBar/icon/call.png" alt="icon">
-                    <p class="sliderBar_title">Перезвоните мне</p>
-                </buttom></div>
-                <div class="sliderBar_grup"><buttom >
+                    Перезвоните мне
+                </buttom><br/>
+                <buttom class="sliderBar_grup">
                     <img class="sliderBar_icon" src="./components/sliderBar/icon/calculator.png" alt="icon">
-                    <p class="sliderBar_title">Расчитать стоимость</p>
-                </buttom></div>
-                <div class="sliderBar_grup"><buttom>
+                    Расчитать стоимость
+                </buttom><br/>
+                <buttom class="sliderBar_grup" >
                     <img class="sliderBar_icon" src="./components/sliderBar/icon/pdf.png" alt="icon">
-                    <p class="sliderBar_title">Скачайте каталог</p>
-                </buttom></div>
-                <div class="sliderBar_grup" ><buttom id="scroll-topBtnBig" >
+                    Скачайте каталог
+                </buttom><br/>
+                <buttom class="sliderBar_grup"  id="scroll-topBtnBig" >
                     <img class="sliderBar_icon-up" src="./components/sliderBar/icon/arrow_up.png" alt="icon">
-                    <p class="sliderBar_title ">Наверх</p>
-                </buttom></div>
-                <div onclick="closeNav()" class="sliderBar_arrow">
-                    <img class="fixed" src="./components/sliderBar/icon/fix_right.png" alt="fixed">
-                </div>
+                    Наверх
+                </buttom><br/>
+                <buttom id="closeBtnNav">
+                    <img class="sliderBar_arrow" src="./components/sliderBar/icon/fix_right.png" alt="fixed">
+                </buttom>
             </div>
             <!-- small Slider Bar  -->
-            <div id="smallSliderBar-content" onclick="openNav()" class="sliderBar-button-open">
-                <div class="sliderBar_grup-open"><button>
+            <div id="openBtnNav" class="sliderBar-button-open">
+                <button class="sliderBar_grup-open">
                     <img class="sliderBar_icon-open" src="./components/sliderBar/icon/call.png" alt="icon">
-                </button>
-                </div>
-                <div class="sliderBar_grup-open"><button >
+                </button><br/>
+                <button class="sliderBar_grup-open">
                     <img class="sliderBar_icon-open" src="./components/sliderBar/icon/calculator.png" alt="icon">
-                </button>
-                </div>
-                <div class="sliderBar_grup-open"><button>
+                </button><br/>
+                <button class="sliderBar_grup-open">
                     <img class="sliderBar_icon-open" src="./components/sliderBar/icon/pdf.png" alt="icon">
-                </button>
-                </div>
-                <div class="sliderBar_grup-open"><button id="scroll-topBtnSmall">
+                </button><br/>
+                <button class="sliderBar_grup-open" id="scroll-topBtnSmall">
                     <img class="sliderBar_icon-open up" src="./components/sliderBar/icon/arrow_up.png" alt="icon">
+                </button><br/>
+                <button class="sliderBar_grup-open">
+                    <img   class="sliderBar_icon-open" src="./components/sliderBar/icon/close.png"  alt="icon">
                 </button>
-                </div>
-                <div  onclick="openNav()" class="sliderBar_grup-open">
-                    <img class="fixed-open" src="./components/sliderBar/icon/close.png" alt="fixed">
-                </div>
             </div>
         </div>
         <main class="wrapper">
             
 
             <div class="cloud_up" ></div>
-            <section class="main_one">
+            <section class="main_one ">
                 <div class="main_one_img_title container">
                     <div class="main_one_grup">
                         <div class="main_one_img1"></div>
@@ -192,8 +189,8 @@
             <div class="cloud_down" ></div>
 
              <!-- background -->
-             <!-- <div class="fire-main_two" ></div>
-             <div class="fireplace-main_two" ></div> -->
+             <div class="fire-main_two" ></div>
+             <div class="fireplace-main_two" ></div>
              <!-- background end -->
             <section class="main_two container">
                 <div class="main_two_heading">
@@ -367,9 +364,6 @@
                     </div> 
 
                     <div class="main_five">
-                        <!-- background -->
-                        <div class="five_fireplace" ></div>
-                        <!-- background end -->
                         <div class="main_five_heading">
                             <div class="square_line-1">
                                 <span></span>
@@ -382,9 +376,13 @@
                                 <span></span>
                                 <span></span>
                             </div>
+                            <button class="button_test">ПРОЙТИ ТЕСТ</button>
+                            <!-- background -->
+                            <div class="five_fireplace" ></div>
+                            <!-- background end -->
                         </div>
-                        <button class="button_test">ПРОЙТИ ТЕСТ</button>
-                    </div>
+                        
+                     </div>
                 </div>
             </section>
             <div class="cloud_down-six" ></div>
@@ -488,42 +486,57 @@
                             <span></span>
                             <span></span>
                         </div>
-                    </div>
-                    <div class="main_seven-feedback">
                         <div class="feedback-magazine"></div>
-                        <div class="feedback-block">
-                            <form  class="feedback-form" action="getform.php" method="get">
+                    </div>
+                    <div class="main_seven-feedback ">
+                        
+                        
+                        <div class="feedback-block" >
+                            <form  class="feedback-form" id="myform" method="get">
                                 <input class="feedback-form-input" type="text" placeholder="Имя" /><br />
-                                <input class="feedback-form-input" type="text" placeholder="Номер телефона WhatsApp" /><br />
-                                <input class="feedback-form-submit" type="submit" value="прислать примеры комплексов" />
-                                <p class="feedback-block-title">Нажимая кнопку “Прислать примеры комплексов”, Вы автоматически соглашаетесь с Политикой конфиденциальности и обработкой данных</p>
+                                <input 
+                                    class="feedback-form-input feedback-phone-input" 
+                                    type="text" 
+                                    maxlength="12" 
+                                    placeholder="Номер телефона WhatsApp +71234567890"/><br />
+                                <div id="phone_error" class="error hidden">введите требуемый формат</div>
+                                           
+                                <button class="feedback-form-submit" type="submit">прислать примеры комплексов</button>
+
+                                
+                                <p class="feedback-block-title">Нажимая кнопку “Прислать примеры комплексов”, 
+                                    Вы автоматически соглашаетесь с Политикой конфиденциальности и обработкой данных</p>
                             </form>
+                                                            
                         </div>
                     </div>
                 </div>
             </section>
             <div class="cloud_down-seven" ></div>
 
-
             <section  class="container">
                 <div class="main_eight">
-                    <div class="heading-eight">
-                        <div class="giftbox"></div>
-                        <div class="square_line-1">
-                            <span></span>
-                            <span></span>
+                    <div class="heading-eightGift">
+                        <div class="heading-eight">
+                            <div class="square_line-1">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <h3 class="main_eight_heading">
+                                <span style="color: #FF9900; font-family: 'Akzidenz-Grotesk Pro Extra';">Акция!</span><br/> 
+                                при заказе комплекса барбекю -
+                                <br/><span style="color: #FF9900; font-family: 'Akzidenz-Grotesk Pro Extra';">
+                                    ваза в цвет комплекса в подарок</span></h3>
+                            <div class="square_line-2">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="giftbox"></div>
                         </div>
-                        <h3 class="main_eight_heading">
-                            <span style="color: #FF9900; font-family: 'Akzidenz-Grotesk Pro Extra';">Акция!</span><br/> 
-                            при заказе комплекса барбекю -
-                            <br/><span style="color: #FF9900; font-family: 'Akzidenz-Grotesk Pro Extra';">
-                                ваза в цвет комплекса в подарок</span></h3>
-                        <div class="square_line-2">
-                            <span></span>
-                            <span></span>
-                        </div>
+                        
                     </div>
-    
+                    
+                    
                      <div class="main_eight-flowers">
                         <img class="flowers" src="./img/main/eight/1.png" alt="flowers">
                         <img class="flowers" src="./img/main/eight/2.png" alt="flowers">
@@ -593,10 +606,8 @@
             </div>
         </footer>
 
-    <script src="main.js"></script>
-    <script src="./components/sliderBar/scroll.js"></script>
-    <script src="./components/carousel/carousel.js"></script>
-    <script src="./components/sliderBar/slider.js"></script>
+    <script type="module" src="main.js"></script>
+
 </body>
 
 </html>
